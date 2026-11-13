@@ -11126,5 +11126,2557 @@
 			"Will not be displayed in Civilopedia",
 			"Moves to new capital when capital changes <hidden from users>"
 		]
-	}
+	},
+	
+	//Main-Mod Übertragung + Bilder building fehlen
+
+	{
+		"name": "Composition of the Summa",
+		"uniqueTo": "Papal States",
+		"cost": 0,
+        "uniques": [
+			"'Outcome'",
+            "Unbuildable",
+            "Unsellable",
+            "Only available <when religion is enabled>",
+            "Only available <after discovering [Theology]>",
+            "Only available <after adopting [Scholasticism]>",
+            "Only available <if [Summa Theologica] is not constructed>",
+            "Gain [200] [Culture] <(modified by game speed)> <if [Summa Theologica] is not constructed by anybody> <hidden from users>",
+            "Gain [150] [Faith] <(modified by game speed)> <if [Summa Theologica] is not constructed by anybody> <hidden from users>",
+            "Gain [150] [Science] <(modified by game speed)> <if [Summa Theologica] is not constructed by anybody> <hidden from users>",
+            "Instantly provides [5] [Academic Research] <if [Summa Theologica] is not constructed by anybody> <hidden from users>",
+            "Instantly provides [3] [Influence] <if [Summa Theologica] is not constructed by anybody> <hidden from users>",
+            "Gain a free [Summa Theologica] [in capital] <if [Summa Theologica] is not constructed by anybody> <hidden from users>",
+            "Moves to new capital when capital changes <hidden from users>",
+            "Comment [Trigger-Building for the composition of the Summa Theologica. Becomes available when both Theology has been researched and Scholasticism has been adopted. Bestows immediate one-time gains in Culture, Faith, Science, Academic Research, and Influence; then automatically grants the permanent Summa Theologica state to the capital.]"
+		],
+		"civilopediaText": [
+        {
+            "text": "Die *Composition of the Summa* markiert den historischen Augenblick, in dem ein Thomas-von-Aquin-Äquivalent meines Reiches sein theologisches Hauptwerk vollendet. Das Ereignis löst eine massive einmalige Welle aus Kultur, Glauben, Wissenschaft, Reichsautorität und akademischem Renommee aus — Päpste kanonisieren das Werk, Universitäten übernehmen die Quaestio-Methode, Klöster vervielfältigen Abschriften — und etabliert anschließend die Summa Theologica als dauerhaften Reichszustand in der Hauptstadt."
+        }
+	]
+	},
+	{
+		"name": "Summa Theologica",
+        "uniqueTo": "Papal States",
+        "cost": 0,
+        "faith": 3,
+        "science": 3,
+        "culture": 2,
+        "uniques": [
+			"'Outcome'",
+            "Unbuildable",
+            "Unsellable",
+            "Only available <when religion is enabled>",
+            "[+10]% [Science] [in capital] <after adopting [Scholasticism]>",
+            "[+1 Faith] from every ['Educational Building'] <in capital>",
+            "[+1 Science] from every ['Educational Building'] <in capital>",
+            "[+1 Culture] from every ['Practice Ground'] <in capital>",
+            "Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+            "Moves to new capital when capital changes <hidden from users>",
+            "Comment [The Summa Theologica marks the intellectual peak of scholasticism in your empire — a permanent state of cultural and religious synthesis. Only obtainable through the Composition of the Summa trigger.]"
+		],
+		  "civilopediaText": [
+        {
+            "text": "Die *Summa Theologica* — wörtlich *Zusammenfassung der Theologie* — ist das Hauptwerk des Dominikanermönchs Thomas von Aquin (1225-1274) und gilt als das einflussreichste Werk der gesamten mittelalterlichen Theologie. Thomas verfasste es zwischen 1265 und 1274; es blieb unvollendet, weil er am 7. März 1274 auf dem Weg zum Konzil von Lyon starb. Die letzten Bücher wurden posthum durch seine Schüler ergänzt. Was Thomas hinterließ, war keine bloße theologische Abhandlung, sondern eine *Methode* und eine *Synthese* — die größte Vereinigung von Glauben und Vernunft, die das mittelalterliche Denken hervorbrachte."
+        }
+		]
+    },
+	{
+		"name": "Burg St. Hilarion",
+        "uniqueTo": "Cyprus",
+        "requiredBuilding": "Monastery",
+        "requiredTech": "Masonry",
+        "cityHealth": 25,
+        "cityStrength": 7,
+        "faith": 1,
+        "uniques": [
+		 	"'Static Defense'",
+            "Must have an owned [Mountain] within [2] tiles",
+            "[+15]% City Strength from defensive buildings",
+            "[+10]% Strength for cities <with a garrison>",
+            "Destroyed when the city is captured"
+		],
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Caernarfon Castle",
+        "uniqueTo": "Wales",
+        "replaces": "Castle",
+        "requiredBuilding": "Walls",
+        "cityStrength": 7,
+        "cityHealth": 25,
+        "culture": 1,
+        "specialistSlots": {
+			"Artist": 1
+		},
+		"uniques": [
+            "'Static Defense'",
+            "[+15]% City Strength from defensive buildings",
+            "[+10]% Strength for cities <with a garrison>",
+            "[-15]% Culture cost of natural border growth [in this city]",
+            "Destroyed when the city is captured"
+		],
+		"hurryCostModifier": 25,
+		"quote": "'Um das Jahr 1283 begann König Eduard I. mit dem Bau von Caernarfon Castle, das er zu seinem Sitz in der Grafschaft Gwynedd machen wollte, die jahrhundertelang Zentrum des Widerstands gegen die englische Krone war.'"
+    },
+	{
+		"name": "Zamość Fortress",
+        "uniqueTo": "Polen",
+        "isNationalWonder": true,
+        "cost": 200,
+        "cityStrength": 5,
+        "cityHealth": 60,
+        "culture": 1,
+        "production": 1,
+        "uniques": [
+			"'Static Defense'",
+            "[2] Unit Supply per city",
+            "[2] free [Kosynier] units appear",
+            "Gain a free [Stadnina Koni] [in this city]",
+            "[+15]% City Strength from defensive buildings",
+            "[+10]% Strength for cities <with a garrison>",
+            "Can only be built <in [in capital] cities>"
+		]
+	},
+	{
+		"name": "Nuraghe",
+        "uniqueTo": "Sardinien",
+        "replaces": "Walls",
+        "requiredTech": "Masonry",
+        "cost": 45,
+        "cityStrength": 7,
+        "cityHealth": 50,
+        "production": 2,
+        "uniques": [
+			"'Static Defense'",
+            "[+10]% Strength for cities <when fighting in [Hill] tiles>",
+            "[+10]% Strength for cities <with a garrison>",
+            "Destroyed when the city is captured"
+		],
+		"hurryCostModifier": 20,
+	},
+	{
+		"name": "Trakai Castle",
+        "uniqueTo": "Lithuania",
+        "replaces": "Castle",
+        "requiredBuilding": "Walls",
+        "cost": 150,
+        "cityStrength": 8,
+        "cityHealth": 30,
+        "happiness": 2,
+        "culture": 1,
+        "uniques": [
+			"'Static Defense'",
+            "[+15]% City Strength from defensive buildings",
+            "[+10]% Strength for cities <with a garrison>",
+            "Destroyed when the city is captured"
+		],
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Bryngaer",
+        "uniqueTo": "Wales",
+        "replaces": "Walls",
+        "requiredTech": "Masonry",
+        "cost": 40,
+        "cityStrength": 5,
+        "cityHealth": 50,
+        "culture": 1,
+		"uniques": [
+            "'Static Defense'",
+            "[+10]% Strength for cities <when fighting in [Hill] tiles>",
+            "[+10]% Strength for cities <with a garrison>",
+            "[-10]% Culture cost of natural border growth [in this city]",
+            "Destroyed when the city is captured"
+        ],
+        "hurryCostModifier": 20
+    },
+	{
+		"name": "Okros Ziche",
+        "uniqueTo": "Georgia",
+        "isNationalWonder": true,
+        "requiredBuilding": "Walls",
+        "requiredTech": "Masonry",
+        "maintenance": 5,
+        "culture": 2,
+        "cityStrength": 15,
+        "cityHealth": 50,
+        "uniques": [
+			"'Static Defense'",
+            "Must be on [Hill]",
+            "[+15]% City Strength from defensive buildings <if [Watch Tower] is constructed>",
+            "[+10]% Strength for cities <when fighting in [Hill] tiles>",
+            "Enemy [Land] units must spend [1] extra movement points when inside your territory <in this city>",
+            "Destroyed when the city is captured"
+        ],
+        "hurryCostModifier": 25,
+        "quote": "'Okros Ziche (georgisch: ოქროს ციხე, wörtlich „die goldene Festung\") ist eine mittelalterliche Festung, die eine wichtige Rolle bei den georgisch-osmanischen Auseinandersetzungen des 16. Jahrhunderts spielte.'",
+    },
+	{
+		"name": "Tsikhe",
+        "uniqueTo": "Georgia",
+        "replaces": "Walls",
+        "requiredTech": "Masonry",
+        "maintenance": 1,
+        "happiness": 1,
+        "cityStrength": 5,
+        "cityHealth": 30,
+        "uniques": [
+			"'Static Defense'",
+            "[+10]% Strength for cities <with a garrison>",
+            "Destroyed when the city is captured"
+		],
+		"hurryCostModifier": 25
+    },
+	{
+		"name": "Theodosianische Mauer",
+        "uniqueTo": "Byzantium",
+        "isNationalWonder": true,
+        "requiredBuilding": "Walls",
+        "requiredTech": "Engineering",
+        "maintenance": 6,
+        "faith": 3,
+        "culture": 3,
+        "cityStrength": 20,
+        "cityHealth": 60,
+        "uniques": [
+			"'Static Defense'",
+            "[+25]% City Strength from defensive buildings",
+            "[+15]% City Strength from defensive buildings <if [Watch Tower] is constructed>",
+            "[+15]% Strength for cities <with a garrison>",
+            "[-25]% Culture cost of natural border growth [in this city]",
+            "[+1 Faith] from all ['Worship Place'] buildings <in this city>",
+            "New [Ranged] units start with [15] XP [in this city]",
+            "All newly-trained [Ranged Combat] units [in this city] receive the [Cover I] promotion",
+            "Enemy [Land] units must spend [1] extra movement points when inside your territory <in this city>",
+            "[3] Unit Supply per city",
+            "Can only be built <in [in holy cities] cities>",
+            "Destroyed when the city is captured"
+		],
+        "hurryCostModifier": 25,
+        "quote": "'Theodosius hat diese Mauern errichtet; ich, Konstantin, habe sie wiederaufgebaut.' — Inschrift am Mevlana-Tor, Präfekt Konstantin",
+    },
+	{
+		"name": "Byzantinische Mauern",
+        "uniqueTo": "Byzantium",
+        "replaces": "Walls",
+        "requiredTech": "Masonry",
+        "cost": 65,
+        "culture": 1,
+        "happiness": 1,
+        "cityStrength": 8,
+        "cityHealth": 30,
+        "uniques": [
+			"'Static Defense'",
+            "[+10]% Strength for cities <with a garrison>",
+            "[+5]% City Strength from defensive buildings <in cities with a [Watch Tower]>",
+            "Destroyed when the city is captured"
+		],
+        "hurryCostModifier": 25
+	},
+	{
+		"name": "Wooden Palace",
+        "uniqueTo": "The Kievan Rus",
+        "replaces": "Castle",
+        "requiredBuilding": "Walls",
+        "requiredTech": "Carpentry",
+        "cost": 100,
+        "cityStrength": 6,
+        "cityHealth": 25,
+        "gold": 2,
+        "happiness": 1,
+        "uniques": [
+			"'Political Building'",
+            "'Military Building'",
+			"Can only be built <in [in capital] cities>",
+            "[Wounded] Units adjacent to this city heal [5] HP per turn when healing",
+            "[+1 Happiness, +1 Production, +1 Gold] [in this city] <with a garrison>",
+            "Provides [1] [Production Export Route] <in cities connected to the capital>",
+            "Provides [3] [Influence Limit]",
+            "Destroyed when the city is captured",
+            "Comment [The Wooden Palace is the fortified princely residence of the Kievan Rus: a combined seat of Knjas authority, Druzhina garrison quarter, polyud'e tribute warehouse, and trade hub on the Way from the Varangians to the Greeks. With a garrison, the full institution becomes active.]"
+        ]
+	},
+	{
+		"name": "Alcazaba",
+        "uniqueTo": "The Moors",
+		"isNationalWonder": true,
+        "replaces": "Castle",
+        "requiredBuilding": "Walls",
+        "requiredTech": "Engineering",
+        "cost": 140,
+        "cityStrength": 7,
+        "cityHealth": 30,
+        "science": 2,
+        "culture": 1,
+        "happiness": 1,
+        "uniques": [
+			"'Static Defense'",
+            "'Political Building'",
+            "'Educational Building'",
+            "'Infrastructure'",
+			"Must have an owned [Hill] within [2] tiles",
+            "Must be next to [Fresh water]",
+            "Only available <in cities with at least [5] [Population]>",
+            "[+10]% growth [in this city]",
+            "[15]% Food is carried over after population increases [in this city]",
+            "[-10]% Unhappiness from [Population] [in this city]",
+            "[+15]% City Strength from defensive buildings",
+            "[+1 Happiness] [in this city] <with a garrison>",
+            "Provides [3] [Influence Limit]",
+            "Destroyed when the city is captured",
+            "Comment [The Alcazaba is a fortified Moorish citadel uniting eight functions in one structure: defensive bastion, Wali's residence, Madrasa, Hammam complex, water gardens, jund garrison quarters, administrative office, and refuge for the urban population.]"
+		],
+        "hurryCostModifier": 25,
+        "civilopediaText": [
+			{
+				"text": "Die *Alcazaba* — arabisch *al-qaṣabah* (القَصَبَة), wörtlich *Zitadelle* oder *befestigter Kern* — repräsentiert die charakteristischen Festungsanlagen der maurischen Städte in al-Andalus, jenem islamischen Reich, das zwischen 711 und 1492 die Iberische Halbinsel beherrschte und über acht Jahrhunderte zur fortgeschrittensten urbanen Zivilisation Europas wurde. Anders als ein gewöhnliches Castle westeuropäischer Bauart war die Alcazaba kein reines Verteidigungsbauwerk, sondern ein *städtisches Mikrokosmos*: militärischer Schutz, herrschaftliche Residenz, Bildungseinrichtung, Wasserarchitektur, Garten-Innenhof, Verwaltungssitz, Bürgerzufluchtsstätte — alles in einer einzigen befestigten Anlage."
+			}
+		]
+	},
+    {
+		"name": "Vár",
+        "uniqueTo": "Hungary",
+        "replaces": "Castle",
+        "requiredBuilding": "Walls",
+        "requiredTech": "Civil Service",
+        "cost": 150,
+        "cityStrength": 8,
+        "cityHealth": 40,
+        "culture": 1,
+        "happiness": 1,
+        "uniques": [
+            "'Static Defense'",
+            "'Political Building'",
+            "'Military Building'",
+			"Must have an owned [Hill] within [2] tiles",
+            "Only available <in cities with at least [4] [Population]>",
+            "[1] Unit Supply per city",
+            "[+15]% City Strength from defensive buildings",
+            "[+10]% Strength for cities <with a garrison>",
+            "[+1 Happiness, +1 Culture] [in this city] <with a garrison>",
+            "Provides [2] [Influence Limit]",
+            "Destroyed when the city is captured",
+            "Comment [The Vár is the Hungarian royal county castle (megyei vár) — seat of the Ispán (royal county administrator), quarter of the Banderium (magnatic banner troops), and bastion of the Antemurale Christianitatis. Every Vár city grants additional Unit Supply through the Banderium system and reinforces all defensive buildings against the Mongol and Ottoman threats Hungary historically faced.]"
+		],
+        "hurryCostModifier": 25,
+        "civilopediaText": [
+			{
+				"text": "Die *Vár* (ungarisch für *Burg*) repräsentiert die königlichen Komitatsburgen des Königreichs Ungarn — *megyei vár* —, die das Rückgrat sowohl der ungarischen Verwaltung als auch der militärischen Verteidigung über mehr als ein halbes Jahrtausend bildeten. Anders als westeuropäische Burgen, die meist private Adelssitze waren, waren die ungarischen Várak ursprünglich *königliche Einrichtungen* — Sitz des *Ispán*, des königlichen Komitatsverwalters, gleichzeitig militärischer Stützpunkt, Steuerzentrum und Gerichtssitz."
+			}
+		]
+	},
+	{
+		"name": "Wooden Fort",
+        "requiredTech": "Carpentry",
+        "cost": 40,
+        "maintenance": 1,
+        "cityStrength": 4,
+        "cityHealth": 15,
+        "gold": 1,
+		"happiness": 1,
+        "uniques": [
+			"'Static Defense'",
+            "'Military Building'",
+            "Unavailable <if [Walls] is constructed>",
+			"Provides [1] [Standing Army Maintenance] <with a garrison> <after adopting [Military Tradition]>",
+            "[Wounded] Units adjacent to this city heal [1] HP per turn when healing <with [Honey]> <in cities with a [Healer's Hut]>",
+            "Destroyed when the city is captured",
+            "Comment [A wooden palisade fort representing early timber fortifications: castrum walls, oppida ramparts, slavic gorodnja-construction, viking trading-borg, russian ostrog, and frontier trading posts. It cannot coexist with Walls — civilizations following the Carpentry tech path build wood-and-earth forts as an alternative to Masonry stone walls. With a garrison it functions as a toll station and protected trading post.]"
+		],
+		"hurryCostModifier": 30
+	},
+	{
+		"name": "Spike Walls",
+        "requiredBuilding": "Wooden Fort",
+        "requiredTech": "Iron Working",
+        "cost": 70,
+        "maintenance": 1,
+        "cityHealth": 15,
+		"uniques": [
+			"'Static Defense'",
+            "'Military Building'",
+            "Unavailable <if [Castle] is constructed>",
+            "[+5]% Production when constructing [Land] units [in this city] <when at war>",
+            "[+5]% Strength for cities <with a garrison>",
+            "[+10]% Strength for cities <when defending>",
+            "Destroyed when the city is captured",
+            "Comment [Iron-tipped wooden stakes and palisade obstacles built around a Wooden Fort, modeled on the Roman pilum murale, Caesar's Alesia field defenses (cippi, lilia, stimuli), and later frontier palisade systems. Most effects activate situationally: the +5% Land Unit Production fires only during wartime (war economy), the +10% city strength fires only when defending (anti-assault function of the spikes), the +5% city strength requires a garrison (active defenders). In peacetime the structure provides cityHealth, training XP and Great Commander generation passively. When stone Castles are constructed, the primitive stake defenses become obsolete and cannot be built anymore.]"
+		],
+		"hurryCostModifier": 30
+	},
+	{
+		"name": "Cyclopian Walls",
+        "uniqueTo": "Troy",
+        "replaces": "Walls",
+        "requiredTech": "Masonry",
+        "cost": 90,
+        "cityStrength": 5,
+        "cityHealth": 100,
+        "culture": 1,
+        "happiness": 1,
+        "uniques": [
+            "'Static Defense'",
+            "[+100]% Gold given to enemy if city is captured",
+            "[+10]% City Strength from defensive buildings <with a garrison>",
+            "[+15]% Production when constructing [{Military} {Water}] units [in this city] <in [Coastal] cities>",
+            "[+1 Gold] [in this city] <in [Coastal] cities>",
+            "[+1 Culture] [in this city] <when at war>",
+            "Destroyed when the city is captured",
+            "Comment [The Cyclopian Walls of Troy: megalithic Bronze Age fortifications attributed by ancient Greeks to the one-eyed Cyclops giants. Historical archetypes include Troy VI/VII (excavated by Schliemann 1870-1890 and Korfmann 1988-2005), Mycenae, and Tiryns. The building grants extreme cityHealth (100, more than any World Wonder defensive building) but only moderate cityStrength (5) — reflecting massive passive defense without active counterattack capability. As a coastal city it produces +15% military water units and +1 gold from Aegean trade. With a garrison the defensive synergy increases by +10%. During wartime the city gains +1 Culture from the hero-cult — Hector, Aeneas, Paris, Andromache live as legends. However: if Troy falls, the captor receives doubled gold from the city's legendary wealth (historically: Schliemann's 1873 'Treasure of Priam').]"
+		],
+        "hurryCostModifier": 25,
+        "civilopediaText": [
+			{
+				"text": "Die *Cyclopian Walls* — griechisch *kyklópeia teíchē*, *zyklopische Mauern* — repräsentieren die gewaltigen megalithischen Festungsmauern der bronzezeitlichen Stadt Troja, jenes legendären Handelszentrums an der Nordwestküste Anatoliens, das zwischen 3000 v. Chr. und 1180 v. Chr. wiederholt zerstört und wieder aufgebaut wurde. Antike Griechen wie Pausanias (Beschreibung Griechenlands, 2. Jh. n. Chr.) glaubten, die Mauern könnten nicht von Menschen errichtet worden sein — die Steinblöcke seien so gewaltig, dass nur die *Zyklopen*, die einäugigen Riesen aus Hesiods *Theogonie*, sie aufgetürmt haben könnten. Tatsächlich bauten die mykenischen und westanatolischen Bronzezeit-Civilizations diese Mauern mit Holzrollen, Erdrampen und kollektiver Arbeitsorganisation."
+            }
+		]
+    },
+	{
+		"name": "Fortifications of Famagusta",
+        "uniqueTo": "Cyprus",
+        "replaces": "Walls",
+        "requiredTech": "Masonry",
+        "cost": 75,
+        "cityStrength": 5,
+        "cityHealth": 40,
+        "culture": 1,
+        "happiness": 1,
+        "uniques": [
+		    "'Static Defense'",
+            "[+1 Gold] [in this city] <in [Coastal] cities>",
+            "[+1 Faith] [in this city] <in [Coastal] cities>",
+            "[+10]% City Strength from defensive buildings <after discovering [Gunpowder Making]>",
+            "[+15]% Strength for cities <when defending> <after discovering [Monocular]>",
+            "[+10]% Strength for cities <with a garrison> <when at war>",
+            "[+1 Culture, +1 Gold] [in this city] <after discovering [Flight]>",
+            "Destroyed when the city is captured",
+            "Comment [The Fortifications of Famagusta model three historical building phases of Cyprus' most famous harbor city: Lusignan-period medieval walls (1192-1489, with 365 churches and the Othello Tower), Venetian Trace-italienne bastions designed by Giovanni Girolamo Sanmicheli (1489-1571: low polygonal bastions, ravelins, water moat), and modern UNESCO-monument status (post-Flight tourism). Coastal cities receive +1 Gold (Silk Road terminus trade) and +1 Faith (the legendary 365 churches). Gunpowder Making activates the Venetian bastion modernization (+10% City Strength from defensive buildings). Monocular activates the full Trace-italienne defense (+15% Strength when defending). With a garrison during wartime, the building grants +10% Strength for cities — modeling Marcantonio Bragadin's 13-month defense against the Ottomans 1570-1571 that triggered the Holy League and the Battle of Lepanto. After Flight (modern tourism era): +1 Culture and +1 Gold from monument status and Shakespeare's 'Othello' setting.]"
+		],
+        "hurryCostModifier": 25,
+        "civilopediaText": [
+			{
+				"text": "Die *Fortifications of Famagusta* — griechisch *Ammóchostos*, italienisch *Famagosta*, türkisch *Mağusa* — repräsentieren die berühmten Stadtmauern und Bastionen Famagustas, der östlichsten Hafenstadt Zyperns. Über sieben Jahrhunderte hinweg wurden diese Befestigungen in drei distinkten historischen Phasen aufgebaut, erweitert und modernisiert: zunächst als mittelalterliche Lusignan-Festung (1192-1489), dann als venezianische Trace-italienne-Bastionsanlage (1489-1571), und schließlich als modernes Denkmal und UNESCO-Welterbe-Kandidat. Jede Phase hinterließ ihre architektonischen Spuren, die noch heute in der Altstadt von Famagusta sichtbar sind."
+            }
+		]
+	},
+	{
+		"name": "Kasbah",
+        "uniqueTo": "Morocco",
+	    "isNationalWonder":true,
+        "replaces": "Castle",
+        "requiredBuilding": "Walls",
+        "requiredTech": "Engineering",
+        "cost": 120,
+        "cityStrength": 6,
+        "cityHealth": 30,
+        "gold": 2,
+        "culture": 1,
+        "happiness": 1,
+        "uniques": [
+			"'Static Defense'",
+            "'Political Building'",
+            "'Military Building'",
+            "Must be next to [Desert]",
+            "[+1 Food, +1 Production] from [Desert] tiles without [Flood plains] [in this city]",
+            "[+1 Gold] [in this city] <with a garrison>",
+            "[+5]% City Strength from defensive buildings <with a garrison>",
+            "Provides [1] [Food Export Route] <in cities connected to the capital>",
+            "[+1 Culture] [in this city] <after discovering [Archaeology]>",
+            "Destroyed when the city is captured",
+            "Comment [The Kasbah is the Moroccan fortified pisé (rammed earth) citadel, modeled on the historical Aït Benhaddou (UNESCO 1987, Hollywood film location for Gladiator and Game of Thrones), Telouet (Glaoui family seat), Taourirt (Ouarzazate museum), and Tamnougalt. The building requires Desert adjacency (historically authentic — all major Atlas kasbahs lie in arid landscapes). It transforms desert tiles into productive land (+1 Food, +1 Production), reflecting Moorish water-engineering and oasis agriculture. With a garrison, the trans-Sahara caravan trade activates: +1 Gold, +5% city strength from defensive buildings. In cities connected to the capital, the Sijilmassa caravan network provides a Food Export Route. After Archaeology, the Kasbah becomes archaeological heritage (+1 Culture). After Flight (modern era), tourism and Hollywood film productions add +1 Culture and +1 Gold. The Kasbah is a multi-phase historical structure: medieval fortress, caravan-era trade post, modern UNESCO heritage monument.]"
+		],
+        "hurryCostModifier": 25,
+        "civilopediaText": [
+			{
+				"text": "Die *Kasbah* — arabisch *al-qaṣbah* (القَصْبَة), wörtlich *Zitadelle* oder *befestigter Kern* — repräsentiert die charakteristischen Festungs- und Herrschaftsbauten Marokkos und des weiteren Maghreb. Anders als die mediterrane Alcazaba al-Andalus' (mit der sie etymologisch verwandt ist) entwickelte sich die nordafrikanische Kasbah zu drei spezifischen Bautypen: der *Stadtkasbah* in großen Städten wie Marrakesch oder Rabat, der *Atlas-Lehmkasbah* in den Berberregionen des Hohen Atlas und der Sahara-Vorzone, und dem *Karawanenposten* an den Trans-Sahara-Handelsrouten. Über mehr als acht Jahrhunderte prägten Kasbahs die marokkanische Landschaft, von den Almoraviden im 11. Jahrhundert bis zur Unabhängigkeit Marokkos 1956."
+            }
+		]
+	},
+	{
+		"name": "Coastal Defenses",
+        "requiredBuilding": "Walls",
+        "requiredTech": "Navigation",
+        "cost": 160,
+        "maintenance": 1,
+        "cityStrength": 3,
+        "cityHealth": 40,
+        "culture": 1,
+        "happiness": 1,
+        "uniques": [
+            "'Static Defense'",
+            "'Marine Infrastructure'",
+            "Must be next to [Coast]",
+            "[+10]% Production when constructing [{Military} {Water}] units [in this city]",
+            "[+5]% City Strength from defensive buildings <with a garrison>",
+            "[+10]% Strength for cities <vs [Water] units>",
+            "[+1 Gold] [in this city] <when not at war>",
+            "[+1 Gold] [in this city] <in cities with a [Fishing Port]>",
+            "Destroyed when the city is captured",
+            "Comment [Coastal Defenses model the universal building type of specialized maritime defense: ancient Athenian Long Walls and Carthaginian Cothon harbor fortifications, the Constantinople Golden-Horn-Chain (broken only by Mehmet II's 1453 land-portage of ships), Renaissance Sanmicheli bastions at Famagusta and Valletta, the Spanish Morro castles at San Juan and Havana, Vauban's 17th-century scientific fortifications, British Martello towers against Napoleon, Atlantic Wall and Singapore Fortress in WW2. Requires Coast adjacency. Specializes against Water units (the historical purpose), provides Marine-Infrastructure-tag synergies, and rewards peaceful maritime trade. The +10% production for military water units reflects the protected dockyards typical of fortified harbors (Venice Arsenal, Karpathos shipyards, Vauban naval bases).]"
+		]
+	},
+	{
+		"name": "Walls of Babylon",
+        "uniqueTo": "Babylon",
+        "replaces": "Walls",
+        "requiredTech": "Masonry",
+        "cost": 55,
+        "cityStrength": 5,
+        "cityHealth": 45,
+        "culture": 1,
+        "happiness": 1,
+        "uniques": [
+			"'Static Defense'",
+            "[-10]% Culture cost of natural border growth [in this city]",
+            "[+5]% City Strength from defensive buildings <with a garrison>",
+            "[+10]% Strength for cities <when at war>",
+            "[+1 Happiness] [in this city] <when not at war>",
+            "[+1 Culture] [in this city] <after discovering [Archaeology]>",
+            "Destroyed when the city is captured",
+            "Comment [The Walls of Babylon represent the monumental triple-layer fortifications built under Nebuchadnezzar II (605-562 BC): inner Imgur-Enlil wall (6.5m thick), outer Nimitti-Enlil wall (3.7m thick), and Euphrates-fed water moat between them. 18 km circumference, 8 monumental gates including the famous Ishtar Gate (575 BC, now reconstructed in Berlin's Pergamon Museum). Ancient authors Herodotus and Strabo listed the Walls of Babylon among the Seven Wonders of the World. As Babylon was rediscovered by Robert Koldewey's 1899-1917 excavations and inscribed as UNESCO World Heritage in 2019, the Walls accumulate cultural value over time: +1 Culture after Archaeology, +1 Culture and +1 Gold after Flight (tourism era). Conditional defenses: +5% city strength from defensive buildings with garrison, +10% strength for cities when at war, +1 Happiness when not at war (Pax Babyloniae). The monumental wall reduces border growth costs by 10% — Babylon is clearly the urban center of its region.]"
+		],
+        "hurryCostModifier": 25,
+        "civilopediaText": [
+			{
+				"text": "Die *Walls of Babylon* — akkadisch *Dūr Bābili* — repräsentieren die monumentalen Befestigungen jener Metropole, die antike Autoren wie Herodot und Strabon zu den *Sieben Weltwundern* zählten. Babylon (akkadisch *Bāb-ilim*, *Tor der Götter*) war über mehr als anderthalb Jahrtausende die größte und prächtigste Stadt der antiken Welt — Hauptstadt unter Hammurabi (1810-1750 v. Chr.), unter den neuassyrischen Eroberern, schließlich monumental ausgebaut unter dem neubabylonischen König *Nebukadnezar II.* (605-562 v. Chr.), der das Reich auf seinen historischen Höhepunkt führte. Die unter Nebukadnezar errichteten Walls of Babylon waren die imposantesten Stadtmauern, die die antike Welt je gesehen hatte."
+            }
+		]
+	},
+	{
+	 	"name": "Acropolis",
+        "uniqueTo": "Greece",
+        "replaces": "Walls",
+        "requiredTech": "Masonry",
+        "cost": 80,
+        "maintenance": 2,
+        "cityStrength": 5,
+        "cityHealth": 40,
+        "culture": 2,
+        "faith": 1,
+        "happiness": 1,
+        "specialistSlots": {
+			"Artist": 1
+		},
+		"uniques": [
+            "'Static Defense'",
+            "'Cultural Building'",
+            "'Worship Place'",
+            "[-10]% Culture cost of natural border growth [in this city]",
+            "[+5]% City Strength from defensive buildings <with a garrison>",
+            "[+1 Faith] [in this city] <with a garrison>",
+            "[+10]% Strength for cities <when at war>",
+            "[+1 Culture] [in this city] <after discovering [Archaeology]>",
+            "Destroyed when the city is captured",
+            "Comment [The Acropolis Citadel is a Greek-Mediterranean walls-replacement representing the fortified sacred hill of every polis — Athens (Parthenon, Erechtheion, Propylaea, Temple of Athena Nike), Corinth's Acrocorinth (Aphrodite Temple), Argos (Larisa), Thebes (Kadmeia), Pergamon, Lindos. Built originally under Pericles (461-429 BC) as symbol of democratic polis identity. Combines three building tags: Static Defense (last defensive refuge), Cultural Building (Phidias' sculptures, theater performances), Worship Place (city goddess temple). Differentiated from the existing 'The Acropolis' National Wonder — that represents the singular pan-Mediterranean cultural peak, this is the standard polis-citadel each city builds. The +10% border-growth reduction reflects how a monumental acropolis marked clear urban centrality. Conditional bonuses activate with garrison (active defenders + sacred ceremonies), during wartime (refuge function as in 480 BC Persian invasion), after Archaeology (classical antiquities studies), and after Flight (UNESCO 1987 tourism era).]"
+		],
+        "hurryCostModifier": 20,
+        "civilopediaText": [
+			{
+				"text": "Die *Acropolis Citadel* — vom griechischen *ἀκρόπολις* (*akrópolis*, *obere Stadt*) — repräsentiert die befestigten Heiligen Höhen der griechischen Polis-Tradition, jenes urbanen Civilisationsmodells, das zwischen dem 8. Jahrhundert v. Chr. und der römischen Eroberung das östliche Mittelmeer prägte. Jede bedeutende griechische Polis besaß ihre Akropolis — den erhöhten, befestigten Stadtkern, der zugleich Tempel der Stadtgöttin, letztes Verteidigungsrefugium und politisch-symbolisches Zentrum war. Die berühmtesten Akropolen waren die *Akropolis von Athen* mit Parthenon und Erechtheion, der *Akrokorinth* in Korinth (fast 600 m hoch, mit Aphrodite-Tempel), die *Kadmeia* in Theben (Sitz des mythischen Königs Kadmos), die *Larisa* in Argos, die hellenistische *Pergamon-Akropolis* (heute Türkei, mit dem berühmten Zeusaltar) und die *Akropolis von Lindos* auf Rhodos."
+            }
+		]
+	},
+	{
+		"name": "Château Fort",
+        "uniqueTo": "France",
+        "replaces": "Castle",
+        "requiredBuilding": "Walls",
+        "requiredTech": "Engineering",
+        "cost": 130,
+        "maintenance": 2,
+        "cityStrength": 7,
+        "cityHealth": 35,
+        "gold": 1,
+        "culture": 1,
+        "happiness": 1,
+        "uniques": [
+			"'Static Defense'",
+            "'Political Building'",
+            "'Military Building'",
+            "[+1 Gold] [in this city] <with a garrison>",
+            "[+5]% City Strength from defensive buildings <with a garrison>",
+            "[+10]% Strength for cities <when at war>",
+            "Provides [1] [Standing Army Maintenance] <with a garrison> <after adopting [Military Tradition]>",
+            "[+1 Culture] [in this city] <after discovering [Archaeology]>",
+            "Destroyed when the city is captured",
+            "Comment [The Château Fort is the canonical French stone castle (11th-16th centuries), centered on the Donjon (keep) as residence of the feudal lord and last defensive refuge. Historical models include Château Gaillard (Richard the Lionheart, 1196-1198), Château de Coucy (largest Donjon in Europe at 55m, destroyed 1917), Château de Pierrefonds (Louis d'Orléans 1393-1407, restored by Viollet-le-Duc 1857-1879), Cité de Carcassonne (12th-13th century, double walls and 52 towers, UNESCO 1997), Mont-Saint-Michel (UNESCO 1979). The Hundred Years War (1337-1453) saw key sieges: Château Gaillard's 16-month defense in 1419 against Henry V, and Jeanne d'Arc breaking the Siege of Orléans on 8 May 1429. Vauban (1633-1707) modernized hundreds of medieval castles in the 17th century with low bastions and ravelins; 12 Vauban fortresses became UNESCO World Heritage in 2008. Mechanically: structural castle values plus Donjon-active conditionals — garrison activates feudal tribute (+1 Gold) and defensive bonus (+5%); with Military Tradition policy, the feudal vassal levy provides +1 Standing Army Maintenance; wartime activates +10% city strength (siege-defense mode); Archaeology activates +1 Culture (Viollet-le-Duc restoration era); Flight activates +1 Culture and +1 Gold (UNESCO tourism).]"
+		],
+		"hurryCostModifier": 25
+	},
+	{
+		"name": "Trench",
+        "requiredBuilding": "Walls",
+        "requiredTech": "Military Science",
+        "cost": 100,
+        "maintenance": 1,
+        "cityStrength": 5,
+        "cityHealth": 15,
+        "uniques": [
+			"'Static Defense'",
+            "'Military Building'",
+            "[+5]% City Strength from defensive buildings <with a garrison>",
+            "Destroyed when the city is captured",
+            "Comment [A simple Industrial-era trench system: earthworks with wooden revetments, sandbag firing positions and barbed wire entanglements. Historical models include Sevastopol 1854-55, Petersburg 1864-65, Port Arthur 1904-05, and the WW1 Western Front (1914-1918). Mechanically a parallel addition to Walls — not as defensively strong as Bastion (Renaissance) or Bunker (Modern), but tech-era-appropriate for Industrial. Provides moderate cityStrength 5 and cityHealth 15 (matching Watch Tower as defensive ergänzungsbau). The single conditional bonus (+5% city strength from defensive buildings with a garrison) reflects the historical reality that empty trenches are useless — only when infantry actually mans them do they contribute to defense.]"
+		],
+        "hurryCostModifier": 25
+	},
+	{
+		"name": "Speisen Straßenmarkt",
+        "uniqueTo": "Pakistan",
+        "requiredTech": "Currency",
+        "cost": 80,
+        "maintenance": 1,
+        "gold": 1,
+        "food": 1,
+        "culture": 1,
+        "happiness": 1,
+        "specialistSlots": {
+			"Merchant": 1
+		},
+        "uniques": [
+			"'Economic Building'",
+            "[+1 Happiness] [in this city] <in cities with at least [6] [Population]>",
+            "[+1 Gold] [in this city] <during We Love The King Day>",
+            "Comment [The Speisen Straßenmarkt represents Pakistan's renowned streetfood bazaars: Burns Road (Karachi, since 1947), Food Street/Gawalmandi (Lahore), Anarkali Bazaar (16th c. Lahore), Kissa Khwani Bazaar (Peshawar, the 'Market of Storytellers' on the ancient Silk Road), Empress Market (Karachi, 1889). Local vendors serve biryani, nihari, haleem, chapli kebab, seekh kebab, naan, paratha, chai, falooda, gol gappay, samosa, pakora — a culinary mix reflecting Mughal, Persian, Central Asian, and South Asian traditions. Mechanically a small, balanced Currency-era economic building: +1 Gold, +1 Food, +1 Culture, +1 Happiness (modest values across multiple categories rather than peak in one), Merchant specialist slot, 'Economic Building' tag. Differentiated from Tavern (alcohol-based +2 Happiness) and Trading Post (Construction-era +10% Gold multiplier with Luxury-tile bonuses) by being a small all-rounder rather than a specialized building. Population-conditional bonus: cities with 6+ Population gain an additional +1 Happiness (streetfood markets only become real social spaces in larger urban centers). WLTKD-conditional bonus: +1 Gold during festival days (historical streetfood boom during weddings, religious festivals like Eid).]"
+		],
+        "hurryCostModifier": 25
+	},
+	{
+		"name": "Souk",
+        "uniqueTo": "Palestine",
+        "requiredTech": "Currency",
+        "cost": 90,
+		"maintenance": 1,
+        "gold": 2,
+        "culture": 1,
+        "happiness": 1,
+        "percentStatBonus": {
+			"gold": 10
+		},
+        "specialistSlots": {
+			"Merchant": 1
+        },
+		"uniques": [
+			"'Economic Building'",
+            "[+1 Culture] from [{'Agricultural Improvement'} {Dyes}] tiles [in this city]",
+            "[+1 Culture] from [{'Agricultural Improvement'} {Incense}] tiles [in this city]",
+            "[+1 Happiness] [in this city] <in cities with at least [6] [Population]>",
+            "[+1 Gold] [in this city] <during We Love The King Day>",
+            "Comment [The Souk represents Palestinian traditional covered markets, modeled on the famous Souk al-Qattanin (Jerusalem, 1336-1337, built by Mamluk governor Tankaz al-Nasiri as 95m vaulted lane), Souk al-Attarin (Jerusalem perfumer market on the Via Dolorosa), Souk al-Lahhamin (Jerusalem butcher market), Souk Khan al-Zeit (Jerusalem olive oil market), Hebron Old City (glass-blowing since 14th c.), Nablus Souk (olive oil soap saboun nabulsi, 19th c. largest soap producer of the Ottoman Empire), Acre Old City (UNESCO 2001). Mechanically a Currency-era economic building specialized for luxury trade: +2 Gold + 10% Gold multiplier + Merchant specialist slot, +1 Culture and +1 Happiness from Mamluk market architecture. Differentiated from Speisen Straßenmarkt (Pakistani allround +1 in each category) by trade-specialization (gold + luxury-tile bonuses). The Dyes and Incense tile bonuses reflect historical Palestinian trade: indigo from Jordan Valley, krapp red, Tyrian purple (Phoenician tradition), and the Incense Trail from Yemen through Petra-Gaza-Damascus (Gaza was historically the northern terminus of the South Arabian incense trade). Population-conditional bonus: cities with 6+ Population gain +1 Happiness (large souks become real social spaces). WLTKD-conditional bonus: +1 Gold during festival days (Eid al-Fitr, Eid al-Adha, Christian and Jewish festivals in mixed religious Palestine).]"
+		],
+        "hurryCostModifier": 25
+	},
+	{
+		"name": "Esir",
+        "requiredTech": "Trade Network",
+		"uniqueTo": "The Ottomans",
+        "cost": 80,
+        "maintenance": 1,
+        "production": 1,
+        "happiness": -1,
+        "percentStatBonus": {
+			"production": 5
+        },
+        "specialistSlots": {
+            "Governor": 1
+        },
+        "uniques": [
+            "'Political Building'",
+            "'Economic Building'",
+            "Only available <when above [0] [Slaves]>", //Evtl -Slave- Irrelevant
+            "Unavailable <if [Abolition] is constructed>",
+            "[+25]% Production when constructing [Worker] units [in this city]",
+            "[+10]% Production when constructing ['Infrastructure'] buildings [in this city] <when above [0] [Slaves]>",
+            "[-1 Happiness] [in this city] <in cities with at least [6] [Population]>",
+            "Destroyed when the city is captured",
+            "Comment [Esir (Ottoman Turkish اسير, from Arabic asir, 'captive') represents a coercive bound-labor administration, NOT a glorified slave market. The term historically covered multiple categories: prisoners of war (esir-i harb), galley slaves, çiftlik-bound peasants, and paradoxically also the kul — the highest Ottoman administrative elite (Sokollu Mehmed Pasha 1565-1579, recruited through devshirme from Christian Bosnia, became one of the most powerful Grand Viziers in history). This building represents the morally ambivalent reality of bound labor systems globally: Russian krepostnoe pravo until 1861, French corvée royale until 1789, Spanish encomienda/mita, Korean nobi until 1894. Mechanically: production bonus (+1 base, +5% multiplier, +25% Worker production) at the cost of -1 Happiness (-2 in cities of 6+ Population, where social tensions are stronger). Requires Slaves resource > 0 (which players gain only through warfare — city capture and combat kills). Becomes unavailable if the Abolition policy is adopted, modeling historical abolition moments: Sultan Abdülmecid I's closure of the Esir Pazarı in 1846, Young Turks abolition 1909, Russian emancipation 1861, French Revolution 1789, 13th Amendment 1865.]"
+		],
+        "hurryCostModifier": 25
+	},
+	{
+		"name": "Exotic Bazaar",
+        "uniqueTo": "The Caliphate",
+        "isNationalWonder": true,
+        "requiredTech": "Currency",
+        "cost": 180,
+        "maintenance": 2,
+        "gold": 3,
+        "culture": 1,
+        "percentStatBonus": {
+			"gold": 15
+        },  
+        "specialistSlots": {
+			"Merchant": 1
+        },
+		"greatPersonPoints": {
+            "Great Merchant": 1
+        },
+        "uniques": [
+            "'Economic Building'",
+            "Provides 1 extra copy of each improved luxury resource near this City",
+            "[+1 Gold] from every [Amsar] <in this city>",
+            "[+1 Culture] from every [Souk] <in this city>",
+            "[+1 Gold] [in this city] <during We Love The King Day>",
+            "Only available <if [Esir] is constructed in at least [4] of [Your] cities>",
+            "Cost increases by [30] per owned city",
+            "Comment [The Exotic Bazaar is the Caliphate's grand luxury market and National Wonder, modeled on the Baghdad-Karkh bazaar (Abbasid capital, ~1 million inhabitants before the Mongol sack of 1258), Damascus Souk al-Hamidiyya, Cordoba (al-Andalus Umayyad caliphate, 500,000 inhabitants in the 10th c.), the Fatimid predecessor of Cairo's Khan el-Khalili, and Aleppo's bazaar (UNESCO 1986). Mechanically a Currency-era National Wonder focused on luxury trade and merchant economy: +3 Gold and +15% Gold multiplier (commercial output), Merchant specialist slot, +1 Great Merchant point per turn (cosmopolitan commercial culture). The core mechanic — Provides 1 extra copy of each improved luxury resource near this City — directly parallels the existing Chartered Company building (Banking era) but is available much earlier as a regional unique. Synergies: +1 Gold from each Amsar (Caliphate garrison-administration city) reflects imperial trade infrastructure; +1 Culture from each Souk reflects cosmopolitan bazaar culture (Souk is the Palestinian Currency-era bazaar — but synergy is functional rather than nation-specific). WLTKD-conditional bonus: +1 Gold during festival days (Eid al-Fitr, Eid al-Adha, Nawruz, Ashura). The Esir-precondition (4 Esir buildings in own cities) reflects the historical reality that great Caliphate trade centers required underlying administrative infrastructure (Bayt al-Mal treasury, Diwan al-Kharaj tax administration, hisba market supervision). Cost-scaling of +30 per owned city follows the mod's National Wonder standard (Epic of Gilgamesh Z. 2048). Crucially: the original entry's Slaves provision, Houri Brothel synergy, Prison Camp synergy, and 'Water' typo have been REMOVED to avoid romantic glorification of human trafficking — the Exotic Bazaar represents prestige commerce in spices, textiles, perfumes, manuscripts, Damascene steel, Persian carpets, trans-Saharan gold (Mansa Musa's 1324 Mecca pilgrimage with 100 camel-loads of gold), not bound labor.]"
+		],
+        "hurryCostModifier": 25,
+        "civilopediaText": [
+			{
+				"text": "Der *Exotic Bazaar* — der große Luxuswaren-Basar des Kalifats — repräsentiert eines der mächtigsten Handelszentren der mittelalterlichen Welt. Vom Bagdad-Karkh-Bazaar des abbasidischen Kalifats über den Damaszener Souk al-Hamidiyya, das fatimidische Vorbild des Khan el-Khalili in Kairo, die Bazaare von Cordoba (al-Andalus-Umayyaden), Aleppo (UNESCO-Welterbe 1986), Fes und Tunis prägten kalifale Handelszentren über mehr als ein halbes Jahrtausend die Wirtschaftsgeographie des Mittelmeers, der Sahara und der Seidenstraße. Anders als regionale Souks (siehe das Palestinian Souk-Building) ist der Exotic Bazaar ein *überregionales Handelszentrum* — Knotenpunkt für chinesische, indische, afrikanische und europäische Waren in einer einzigen Reichshauptstadt."
+            }
+		]
+	},
+	{
+		"name": "Khazar Marketplace",
+        "uniqueTo": "Khazaria",
+        "requiredTech": "Currency",
+        "cost": 100,
+        "maintenance": 1,
+        "gold": 2,
+        "culture": 1,
+        "percentStatBonus": {
+            "gold": 10
+        },
+        "specialistSlots": {
+            "Merchant": 1
+        },
+        "uniques": [
+			"'Economic Building'",
+            "[+10]% [Gold] from Trade Routes",
+            "[+1 Gold] [in this city] <in cities connected to the capital>",
+            "[+1 Gold] from [{Camp} {Furs}] tiles [in this city]",
+            "[+1 Gold] from [{'Agricultural Improvement'} {Silk}] tiles [in this city]",
+            "[+1 Gold] [in this city] <during We Love The King Day>",
+            "Comment [The Khazar Marketplace represents the legendary trade hubs of the Khazar Khaganate (ca. 650-969 AD), modeled on Itil (capital at the Volga Delta near modern Astrakhan, described by Arab travelers al-Masudi, Ibn Fadlan, and Ibn Hawqal), Sarkel (fortress on the Don, 833 AD), and Balanjar. The Khazars controlled the four critical trade nexus between Scandinavia, the Islamic world, Byzantium, and the Eurasian steppe — Volga route, Black Sea trade, northern Silk Road branch, and Caspian commerce. Their wealth came from transit duties (one-tenth toll on all caravans), not local production. Mechanically: small economic Currency-era building with Trade-Routes specialization, differentiated from Souk (Palestine luxury-resources, static) and Speisen Straßenmarkt (Pakistan allround) by being focused on dynamic empire-wide trade logistics. Stats: 2 Gold, 1 Culture (multireligious tolerance — Itil had seven judges from Jewish, Muslim, Christian, and pagan communities), 10% Gold multiplier, Merchant specialist. Trade-Routes bonus +10% (consistent with mod patterns Z. 2747 Culture/Z. 1494 Gold). Conditional bonuses: +1 Gold in cities connected to the capital (Khazar caravan network), +1 Gold from Furs Camps (Volga forest fur tribute — sable, ermine, squirrel — traded millionfold for Islamic silver dirhems), +1 Gold from Silk Plantations (Silk Road northern branch from Central Asia), +1 Gold during WLTKD (festival markets). The percentStatBonus gold was reduced from 25 to 10 to match mod balance (Trading Post pattern), and the Trade Routes bonus was changed from +2% to +10% to match mod conventions.]"
+        ],
+        "hurryCostModifier": 25
+	},
+	{
+		"name": "Suq",
+        "uniqueTo": "Mogadishu",
+        "replaces": "Bank",
+        "requiredTech": "Banking",
+		"requiredBuilding": "Market",
+        "cost": 200,
+        "maintenance": 2,
+        "gold": 2,
+        "culture": 1,
+        "percentStatBonus": {
+			"gold": 20
+        },
+		"specialistSlots": {
+			"Merchant": 2
+        },
+		"uniques": [
+            "'Economic Building'",
+			"Only available <in [Coastal] cities> <in cities with at least [8] [Population]>",
+            "[+1 Gold] from every [Merchant] <in this city>",
+            "[Great Merchant] is earned [+1]% faster",
+            "[+1 Gold] [in this city] <in [Coastal] cities>",
+            "[+10]% [Gold] from Trade Routes <in [Coastal] cities>",
+            "[+1 Gold] [in this city] <in cities connected to the capital>",
+            "[+1 Culture] [in this city] <when not at war>",
+            "[+100]% Gold given to enemy if city is captured",
+            "Comment [The Suq represents the great Indian Ocean trade markets of Mogadishu, modeled on the historical Suq Bakaaraha and the medieval Swahili-civilization trade emporium (12th-16th centuries). Mogadishu was capital of the Sultanate of Mogadishu and a major node in the Indian Ocean monsoon-driven trade network connecting four worlds: Sub-Saharan Africa (gold from Zimbabwe, ivory, ebony), Arabia/Persia (dates, horses, silver dirhems), India (Gujarat cotton textiles, Malabar pepper), and China (porcelain, silk). Ibn Battuta visited in 1331 and described Mogadishu as 'an extremely large city' with wealthy merchants. Zheng He's treasure fleets visited in 1417 and 1430 — the first documented giraffe delivery to the Ming court in 1414 came from Mogadishu. Mechanically a Banking-era Bank replacement: maintains Bank's core gold mechanics (20% Gold multiplier vs Bank's 25% — slightly weaker pure multiplier compensated by +2 Gold native, +1 Culture, doubled Merchant slots, and conditional bonuses). Inherits Bank's Capture-Gold penalty (+100% gold given to enemy if captured — historically accurate: Mogadishu was so wealthy that any conqueror reaped huge booty, hence Mir Ali Bey's 1583 plundering). Conditional bonuses: +1 Gold and +10% Trade-Routes-Gold in Coastal cities (Mogadishu always Coastal — Indian Ocean trade); +1 Gold in cities connected to the capital (caravan networks); +1 Culture when not at war (Mogadishu prospered in periods of stability). Differentiated from Vanilla Bank by trade-spezialization for Coastal civilizations like Somalia, and from Currency-era buildings (Souk, Speisen Straßenmarkt, Khazar Marketplace) by Banking-tier strength.]"
+		],
+        "hurryCostModifier": 15,
+        "civilopediaText": [
+			{
+				"text": "Der *Suq* — arabisch *سوق* (*sūq*, *Markt*) — repräsentiert in dieser somalischen Variante das große Indian-Ocean-Handelszentrum nach dem Vorbild des historischen *Suq Bakaaraha* in Mogadishu. Anders als der palästinensische *Souk* (Currency-Era, Mamlukenzeit-Marktarchitektur) oder das kalifale *Exotic Bazaar* (National Wonder, Mesopotamien-Levante) modelliert der somalische Suq die *maritime Handelskultur des Indischen Ozeans* — jene kosmopolitische Verbindung zwischen Bantu-Afrika, arabischer Welt, Persien, Indien und China, die zwischen dem 10. und 16. Jahrhundert eine der vitalsten Wirtschaftszonen der Welt war."
+            }
+        ]
+	},
+	{
+		"name": "Numismatics",
+        "uniqueTo": "Bactria",
+        "replaces": "Mint",
+        "requiredTech": "Currency",
+        "cost": 80,
+        "maintenance": 1,
+        "gold": 1,
+        "culture": 1,
+        "uniques": [
+			"'Economic Building'",
+            "'Political Building'",
+            "[+1 Gold] from [{'Extraction Improvement'} {Gold Ore}] tiles [in this city]",
+            "[+1 Gold] from [{'Extraction Improvement'} {Silver Ore}] tiles [in this city]",
+            "[+1 Gold] from [{'Extraction Improvement'} {Rich Copper Ore}] tiles [in this city]",
+            "[+1 Gold] per [4] population [in this city]",
+            "[+1 Gold] [in this city] <in cities connected to the capital>",
+            "[+1 Culture] [in this city] <during We Love The King Day>",
+            "Comment [Numismatics is the Bactrian Mint replacement, modeled on the legendary coinage of the Greco-Bactrian Kingdom (256-130 BC) and Indo-Greek Kingdoms (180 BC - 10 AD). Bactria — Strabo's 'thousand-city kingdom' — was famous for the highest-quality portrait coinage of the entire ancient world: realistic royal portraits (Diodotos I, Eucratides the Great, Menander Soter/Milinda), Greek inscriptions, bilingual Kharoshthi/Greek coins for Indian subjects, and double-sided artistry with Greek deities on reverses (Zeus, Athena, Apollo, Heracles). The most famous Bactrian coin is Eucratides I's 20-stater gold piece (169.2g, 170-145 BC) — the largest gold coin of antiquity, now in Paris's Cabinet des Médailles. Mechanically inherits Mint's core mechanics (Z. 1121-1138): +1 Gold per improved Gold Ore tile, +1 Gold per improved Silver Ore tile, +1 Gold per improved Rich Copper Ore tile, +1 Gold per 4 Population (modeling broad economic standardization), and the requiredNearbyImprovedResources gate (Gold Ore, Silver Ore, Rich Copper Ore, Cocoa). Differentiated from Vanilla Mint by adding +1 Gold native (royal mint office wealth), +1 Culture (Greco-Bactrian portrait artistry as cultural achievement), +1 Happiness (trust in stable currency — historically critical for trade), +1 maintenance (royal mint had operational costs), and two conditional bonuses: +1 Gold in cities connected to the capital (Bactrian drachmas standardized across the empire, Zhang Qian reported them from Persia to India), +1 Culture during WLTKD (festival coinage with king-portraits — Bactrian kings minted special coins for weddings, military victories, religious feasts). Numismatics removes the original entry's Cocoa-related bonus mention (not historically Bactrian — cocoa was American), corrects the resource names from 'Gold/Silver' to 'Gold Ore/Silver Ore' (Z. 1528 explanatory note), uses the mod-standard Extraction-Improvement-combined filter, and adds proper Tag quotes ('Economic Building').]"
+		],
+        "hurryCostModifier": 25
+	},
+	{
+		"name": "Caravanserai",
+        "uniqueTo": "The Nabataeans",
+        "replaces": "Market",
+        "requiredTech": "Currency",
+        "cost": 110,
+        "maintenance": 1,
+        "gold": 2,
+        "culture": 1,
+        "percentStatBonus": {
+			"gold": 10
+        },
+        "specialistSlots": {
+            "Merchant": 1
+        },
+        "uniques": [
+            "'Economic Building'",
+            "Must be next to [Desert]",
+            "[+1 Production] from [Desert] tiles without [Flood plains] [in this city]",
+            "[+2 Food] from [Oasis] tiles [in this city]",
+            "[+5]% [Gold] [in this city] <with [Camel]>",
+            "[+10]% [Gold] from Trade Routes",
+            "[+1 Gold] [in this city] <in cities connected to the capital>",
+            "[+1 Gold] [in this city] <during We Love The King Day>",
+            "Comment [The Caravanserai is the Nabataean Market replacement, modeled on the Incense Route (Hadhramaut to Gaza, 2400 km, UNESCO 2005) that the Nabataeans controlled from the 4th century BC until Trajan's annexation in 106 AD. Petra (UNESCO 1985, New Seven Wonders 2007) and Hegra/Mada'in Salih (UNESCO 2008) were the major hubs. Mechanically a Currency-era Market replacement with Desert/Oasis specialization: must be built next to a Desert tile (historically authentic — caravan stations were located at desert edges). Bonuses: +1 Production from Desert tiles without Flood plains (deliberately weaker than the existing Desert Trade Network wonder Z. 1645 which provides +1 Food +1 Production from Desert — Caravanserai gets only Production to differentiate); +2 Food from Oasis tiles (Nabataean water engineering — Petra's cisterns supplied 30,000 inhabitants in driest region); +5% Gold with Camel resource (Z. 1528 mod-standard pattern — camels were essential caravan transport); +10% Gold from Trade Routes (Incense Route identity); +1 Gold in cities connected to the capital (Petra imperial caravan network); +1 Gold during WLTKD (Aretas IV festival days). Differentiated from Desert Trade Network wonder (later Tech, isWonder=true, +1F+1P from Desert) by being earlier-tech city-specific with Oasis/Camel/Trade-Routes focus. Stat values reduced from original (gold 3 → 2, percentStatBonus gold 25 → 10, Merchant 2 → 1) to match mod balance for Currency-era regional buildings (Souk Z. 1067, Khazar Marketplace).]"
+		],
+        "hurryCostModifier": 25
+	},
+	{
+		"name": "Sukiennice",
+        "uniqueTo": "Poland",
+        "isNationalWonder": true,
+        "requiredTech": "Currency",
+        "cost": 160,
+        "maintenance": 1,
+        "gold": 3,
+        "culture": 1,
+        "specialistSlots": {
+			"Merchant": 1
+		},
+        "greatPersonPoints": {
+            "Great Merchant": 1
+        },
+        "uniques": [
+            "'Economic Building'",
+            "[+10]% [Gold] from Trade Routes",
+            "[+1 Gold] [in this city] <in cities connected to the capital>",
+            "[+1 Gold] [in this city] <during We Love The King Day>",
+            "Cost increases by [30] per owned city",
+            "Comment [Sukiennice (Polish, from sukno = cloth) — the famous Cloth Hall at Krakow's Main Market Square (Rynek Główny, 4 hectares, the largest medieval town square in Europe). Built after the 1241 Mongol invasion and Krakow's reconstruction under Magdeburg Law (1257, Boleslaw V), expanded by King Kasimir III the Great (1333-1370) into a 108-meter Gothic double-vault, rebuilt after the 1555 fire by Italian architects Giovanni il Mosca and Santi Gucci (1556-1559) in Renaissance style, restored Neo-Gothic by Tomasz Pryliński (1875-1879). UNESCO World Heritage 1978 (one of the first Polish Heritage sites). Mechanically a Currency-era National Wonder uniqueTo Poland: +3 Gold (royal trade hall), +1 Culture (cultural-prestige identity), Merchant specialist slot, +1 Great Merchant point per turn, +10% Gold from Trade Routes (Via Regia + Tatar Trail + Amber Road); +1 Gold in cities connected to capital (Krakow imperial caravan network); +1 Gold during WLTKD (Krakow royal feasts, Lajkonik tradition, Jagiellonian court ceremonies). Time-evolutionary cultural bonuses: +1 Culture after discovering Archaeology (Sukiennice becomes object of historical research); +1 Culture + 1 Gold after discovering Flight (UNESCO-tourism era — Sukiennice is today a major tourist magnet). Cost-scaling +30 per owned city follows National Wonder standard Z. 2048. Differentiated from Exotic Bazaar (Caliphate luxury-copy NW) by trade-routes/cultural-evolution focus. Critical original-entry corrections: greatPersonPoints {gold:1} → {Great Merchant:1} (technically invalid — 'gold' is not a Great Person class), requiredBuilding Market removed (Market does not exist in mod), isNationalWonder added (historically Sukiennice is unique to Krakow).]"
+        ],
+        "hurryCostModifier": 25
+    },
+	{
+		"name": "Casa de Contratacion",
+        "uniqueTo": "Spain",
+        "isNationalWonder": true,
+        "requiredTech": "Cartography",
+        "cost": 200,
+        "maintenance": 2,
+        "gold": 3,
+        "culture": 2,
+        "percentStatBonus": {
+			"gold": 15
+        },
+        "specialistSlots": {
+            "Merchant": 2
+        },
+         "greatPersonPoints": {
+            "Great Merchant": 2,
+            "Great Admiral": 1
+        },
+        "uniques": [
+            "'Economic Building'",
+            "'Marine Infrastructure'",
+            "Connects trade routes over water",
+            "[+1]% [Gold] from every ['Marine Infrastructure']",
+            "[+10]% [Gold] from Trade Routes",
+            "[+15]% Production when constructing [Water] units [in this city]",
+            "[+1 Gold] [in all coastal cities]",
+            "[+1 Gold] [in all coastal cities] <when not at war>",
+            "[+1 Gold] [in this city] <in cities connected to the capital>",
+            "[+1 Culture] [in this city] <after discovering [Archaeology]>",
+            "Cost increases by [30] per owned city",
+            "Comment [The Casa de Contratación de las Indias was founded on February 14, 1503 in Seville by Real Cédula of Queen Isabella I of Castile, and operated until its dissolution under Charles IV in 1790. It was the Spanish Crown's centralized administrative agency for all overseas trade with the Americas, structured around three principal offices (Factor, Tesorero, Contador) and the Piloto Mayor (Chief Pilot, established 1508 — first holder: Amerigo Vespucci 1508-1512, later Sebastián Cabot 1518-1547). The Casa maintained the Padrón Real — the secret master chart of all Spanish discoveries, continuously updated by returning pilots. Mechanically a Cartography-era National Wonder uniqueTo Spain (NOT a World Wonder — corrected from original: all 102 World Wonders in mod are universal; mod-systemically uniqueTo Wonders are National Wonders). The original entry's greatPersonPoints {'gold': 3} was technically invalid — 'gold' is not a Great Person class; corrected to Great Merchant 2 + Great Admiral 1 (user confirmed Great Admiral exists in mod). The original 15% Production + 15% Culture + 15% Gold all-purpose bonus was overpowered and thematically too broad — Casa was specifically a TRADE office, not a culture/production institution; reduced to focused 15% Gold multiplier. Core maritime mechanics: Marine-Infrastructure-realm-wide synergy (+1% Gold per Marine Infrastructure building anywhere in empire, Z. 6033 as exact pattern — scales with Lighthouses, Trading Ports, Fishing Ports), +10% Gold from Trade Routes (Carrera de Indias identity), Connects trade routes over water (Lighthouse-analog function for India Fleet routes), +15% Production for Water units (India Fleet shipbuilding), +1 Gold in all coastal cities (Gold Fleet logistics), +1 Gold in coastal cities when not at war (Gold Fleets needed safe routes — historically the English, Dutch, and French wars repeatedly disrupted them). Time-evolutionary cultural bonuses: +1 Culture after Archaeology (Archivo General de Indias as historical research object — 80 million documents); +1 Culture + 1 Gold after Flight (UNESCO World Heritage 1987 as tourism magnet). Cost-scaling +30 per owned city follows National Wonder standard Z. 2048. Tag 'Marine Infrastructure' (NOT user-suggested 'Naval Building' which doesn't exist as tag) makes Casa de Contratación itself contribute to the realm-wide synergy — self-reinforcing maritime identity.]"
+        ],
+        "hurryCostModifier": 25
+	},
+	{
+		"name": "Caravansary",
+        "uniqueTo": "Songhai",
+        "replaces": "Market",
+        "requiredTech": "Currency",
+        "cost": 110,
+        "maintenance": 1,
+        "gold": 2,
+        "culture": 1,
+        "percentStatBonus": {
+            "gold": 10
+        },
+        "specialistSlots": {
+            "Merchant": 1
+        },
+        "uniques": [
+            "'Economic Building'",
+            "[+10]% [Gold] from Trade Routes",
+            "[+1 Gold] from [River] tiles [in this city]",
+            "[+1 Gold] from [{'Extraction Improvement'} {'Precious Mineral'}] tiles [in this city]",
+            "[+1 Gold] from [{Camp} {Ivory}] tiles [in this city]",
+            "[+1 Gold] [in this city] <in cities connected to the capital>",
+            "[+1 Culture] [in this city] <after adopting [Monotheism]>",
+            "[+1 Gold] [in this city] <during We Love The King Day>",
+            "Comment [The Caravansary is the Songhai Market replacement, modeled on the trans-Saharan trade organization of the Songhai Empire (1464-1591), the largest and richest empire in West African history. Capital Gao on the Niger; trade centers Timbuktu and Djenné (both UNESCO World Heritage 1988). Differentiated from the Nabataean Caravanserai (desert/oasis/camel focus) by being inland Sahel-oriented with Niger River, trans-Saharan gold-salt trade, and Islamic scholarship. Differentiated from Numismatics (Bactria Mint replacement, precious-metal standardization) and Jewellery Workshop (universal jewelry-craft building) by being Market replacement focused on caravan trade and trade routes rather than coinage or jewelry production. The original entry's [Salt] tile bonus was REMOVED — Salt does not exist as a resource in the mod (verified TileResources.json — Salt not listed despite its historical importance to Sahel trade; can only be referenced in civilopediaText). Similarly the original [Copper] was corrected — mod only has 'Rich Copper Ore' (Z. 1615) which is now subsumed under 'Precious Mineral' tag (Z. 1517, 1546, 1576, 1637 — includes Gold Ore, Silver Ore, Rich Copper Ore). The original 'Can be build with...' unique was REMOVED — invalid syntax; this is a Comment-text or civilopedia material only. Stats: 2 Gold (caravan market revenue), 1 Culture (Timbuktu-Sankoré cultural identity), 10% Gold multiplier, 10% Trade Routes Gold (trans-Saharan caravan identity — caravans of 1,000-3,000 camels between Sahel and Maghreb). Conditional bonuses with mod-standard combined-filter patterns: +1 Gold from River tiles (Niger River trade — Z. 1113, 3146 patterns), +1 Gold from Extraction-Improvement Precious Mineral tiles (Wangara goldmines Bambuk and Bure — Z. 1146 as exact pattern from Jewellery Workshop), +1 Gold from Camp-Ivory tiles (Senegambia ivory trade — Z. 1147 as exact pattern), +1 Gold in cities connected to the capital (Gao imperial network under Askia Mohammed I), +1 Culture after adopting Monotheism (Sankoré University with up to 25,000 students under Askia, 700,000+ manuscripts, Ahmed Baba al-Massufi 60+ works — Z. 622, 1222 as Monotheism conditional pattern), +1 Gold during WLTKD (Askia festival days). Removed: maintenance 0 (corrected to 1 — standard), Mint replacement (conflict with Numismatics; corrected to Market replacement for trade-routes focus), requiredNearbyImprovedResources (Market replacement does not need precious-mineral gate — these are now incentives via conditional bonuses, not requirements).]"
+        ],
+        "hurryCostModifier": 25
+	},
+	{
+		"name": "Silversmith",
+        "uniqueTo": "Celts",
+        "replaces": "Mint",
+        "requiredTech": "Currency",
+        "cost": 80,
+        "maintenance": 1,
+        "production": 1,
+        "gold": 1,
+        "culture": 1,
+        "uniques": [
+            "'Light Industry'",
+            "'Economic Building'",
+            "[+1 Gold] from [{'Extraction Improvement'} {Gold Ore}] tiles [in this city]",
+            "[+1 Gold] from [{'Extraction Improvement'} {Silver Ore}] tiles [in this city]",
+            "[+1 Production] from [{'Extraction Improvement'} {Rich Copper Ore}] tiles [in this city]",
+            "[+1 Gold] per [4] population [in this city]",
+            "[+1 Culture] [in this city] <during We Love The King Day>",
+            "Comment [The Silversmith is the Celtic Mint replacement, modeled on the legendary metallurgy of the Hallstatt (ca. 800-450 BC, named after Hallstatt in Upper Austria — 5,000+ Iron Age burials excavated from the salt-mine cemetery) and La-Tène (ca. 450 BC - 100 AD) cultures. Celtic smiths were not primarily coiners but master craftsmen producing torques (heavy gold neck rings as warrior/divine status symbols — the famous Dying Gaul statue wears one), fibulae (cloak-pin brooches in La-Tène spiral style — the safety-pin form is a Celtic invention), sword scabbard decorations with gold repoussé work, and ritual objects like the Gundestrup Cauldron (silver, ca. 100 BC, 102 cm diameter). Famous finds include the Schifferstadt Gold Hat (1400 BC), the Vix Krater (500 BC, 208 kg — largest surviving ancient vessel), the Hochdorf princely tomb (1978), the Snettisham hoard (175 kg gold, 75 torques — largest British Celtic precious-metal find), and the Battersea Shield. Celtic coinage included Regenbogenschüsselchen (Bavarian gold cups), and Vercingetorix's staters minted during the 52 BC revolt against Caesar. Mechanically differentiated from: (1) Mint (vanilla universal) by adding +1 Production native, +1 Gold native, +1 Culture native and 'Light Industry' tag (craft-workshop identity); (2) Numismatics (Bactria Mint-replacement, Political+Economic tags, mint-administration focus with Capital-Connection bonus) by being craft-focused with Light-Industry tag, Production-on-Copper differentiation, and no political-legitimacy bonus; (3) Jewellery Workshop (universal Light-Industry, broader resource coverage including Ivory/Coral/Gems) by being Mint-replacement (replaces Mint instead of being additional) with inherited Mint mechanics (requiredNearbyImprovedResources Gold Ore/Silver Ore/Rich Copper Ore/Cocoa, +1 Gold per 4 population). Critical corrections from original: [Silver] resource doesn't exist in mod (corrected to Silver Ore — Z. 1557); [Copper] doesn't exist (corrected to Rich Copper Ore — Z. 1615); Copper-bonus changed from Gold to Production (bronze-tool-craft makes Copper a production-material in Celtic context — also differentiates from Numismatics which gives Gold from same resource); tile-bonus values reduced from +2 to +1 to match Mint baseline (Mint has +1 from each); combined-filter syntax {'Extraction Improvement'} added (Mint Z. 1125-1127 mod-standard); Salt-bonus from original not implementable — Salt doesn't exist as resource in mod despite Hallstatt's historical salt-mining importance; Salt referenced only in civilopediaText. Pop-scaling +1 Gold per 4 population inherited from Mint mechanics. WLTKD-Culture bonus reflects Celtic ritual festivals (Beltane May 1, Lughnasadh August 1, Samhain October 31/November 1, Imbolc February 1) where gold offerings and jewelry decoration were ritualistic.]"
+        ],
+        "hurryCostModifier": 25
+	},
+	{
+		"name": "Mission",
+        "uniqueTo": "Spain",
+        "requiredTech": "Cartography",
+        "cost": 80,
+        "maintenance": 1,
+        "faith": 2,
+        "culture": 1,
+        "uniques": [
+            "'Worship Place'",
+            "Only available <when religion is enabled>",
+            "Only available <after adopting [Monotheism]>",
+            "[+50]% Natural religion spread [in this city]",
+            "Provides [1] [Piety] <when [Religious] Victory is enabled> <on foreign continents> <in cities with at least [10] [Population]>",
+            "[+2 Faith, +1 Culture] [in this city] <on foreign continents>",
+            "[1] free [Missionary] units appear <on foreign continents>",
+            "[+1 Gold] [in this city] <in cities connected to the capital>",
+            "[+1 Gold] [in this city] <during We Love The King Day>",
+            "Destroyed when the city is captured",
+            "Comment [Mission represents the Spanish missionary tradition (1493-1821) — religious-and-colonial outposts established by Franciscans (from 1494), Dominicans (from 1510, including Bartolomé de las Casas, defender of indigenous peoples), Augustinians (from 1533, later Philippines), and Jesuits (from 1572, Paraguay Reductions with up to 150,000 Guaraní, California-Sonora missions, expelled 1767). Famous mission systems: Junípero Serra's 21 California Missions (1769-1823, Serra canonized 2015 by Pope Francis), the Paraguay Reduction of San Ignacio Miní (UNESCO 1983), San Antonio Missions (UNESCO 2015), Manila Philippines missions, Mission Santa Bárbara. CRITICAL CORRECTIONS from original entry: requiredTech changed from Currency (thematically wrong — Mission is religious, not economic) to Cartography (mod-systemic foreign-continent buildings use Cartography, e.g. The Great Exchange Z. 3877). Gold Ore tile bonus REMOVED — Mission is not a Mint replacement; this bonus was thematically misplaced. Silver tile bonus REMOVED — Silver as resource doesn't exist in mod (only Silver Ore Z. 1557), AND tile bonus from precious metals thematically belongs to Mint/Silversmith, not Mission. Maintenance 0 corrected to 1 (Worship Place standard). Natural religion spread reduced from +34% (unrunder Wert) to +50% (mod-balanced — House of God Z. 3391 has +100% but only as National Wonder in Holy City). Tag 'Worship Place' added (Tags.txt Z. 57, Chapel Z. 6936 as pattern). Religion-enabled and Monotheism-adoption conditionals added (mod-standard for Christian buildings — Chapel Z. 6938). Destroyed-when-captured added (analog Chapel Z. 6940 — Protestant conquerors typically secularized/destroyed Catholic missions; California missions secularized 1834 by Mexico). Conditional bonuses on foreign continents reflect Spanish colonial mission identity: +2 Faith and +1 Culture (Mission as transcontinental cultural carrier — Sahagún's Florentine Codex preserved Aztec mythology, mestizo architecture); +1 free Missionary (Mission as mission-sending hub, analog pattern Z. 1949). Piety contribution toward Religious Victory (analog House of God Z. 3390). Capital-connection bonus reflects Viceroyalty administrative network (Sevilla/Madrid → Mexico City/Lima/Manila). WLTKD bonus reflects Mission feast days (Three Kings, Marian festivals, local patron saints). Differentiated from universal worship-places (Chapel, Monastery) by later Cartography tech and unique foreign-continent specialization.]"
+        ],
+        "hurryCostModifier": 25,
+         "civilopediaText": [
+			{
+				"text": "Die *Mission* — spanisch *Misión*, von lateinisch *missio* (*Sendung*) — repräsentiert eines der prägendsten und gleichzeitig moralisch ambivalentesten Phänomene der spanischen Kolonialgeschichte. Zwischen 1493 und 1821 errichtete die spanische Krone in Zusammenarbeit mit den großen katholischen Orden ein weltumspannendes Netz religiöser Außenposten, das sich von der mexikanisch-kalifornischen Wüste über die Anden, den paraguayischen Urwald bis zu den Philippinen erstreckte — die *Misiones Españolas*. Dieses Building modelliert diese vielschichtige Institution: religiöse Glaubensverbreitung, koloniale Siedlungsorganisation, kulturelle Vermittlung und Verwaltungsstützpunkt."
+            }
+		]
+	},
+	{
+		"name": "Bazaar",
+        "uniqueTo": "Arabia",
+        "replaces": "Market",
+        "requiredTech": "Currency",
+        "cost": 110,
+        "maintenance": 1,
+        "gold": 2,
+        "culture": 1,
+        "percentStatBonus": {
+			"gold": 10
+        },
+        "specialistSlots": {
+            "Merchant": 1
+        },
+        "uniques": [
+            "'Economic Building'",
+            "[+10]% [Gold] from Trade Routes",
+            "[+1 Gold, +1 Culture] from [Luxury resource] tiles [in this city] <in cities with a ['Worship Place']>",
+            "[+1]% [Gold] from every ['Worship Place']",
+            "[+1 Gold] [in this city] <after adopting [Pilgrimage]>",
+            "[+1 Gold] [in this city] <in cities connected to the capital>",
+            "[+1 Gold] [in this city] <during We Love The King Day>",
+            "Comment [The Bazaar is the Arabia Market replacement, modeled on the traditional pilgrim-market tradition of Mecca, Medina, Sana'a (UNESCO 1986), Damascus's Suq al-Hamidiyya, Baghdad's Karkh bazaar, and Najran. Unique identity differentiated from all six existing Currency-era regional economic buildings (Speisen Straßenmarkt = Pakistan/allround, Souk = Palestine/Dyes-Incense plantations, Khazar Marketplace = Khazaria/Trade-routes-Furs-Silk, Exotic Bazaar = Caliphate/NW Luxury-doubling, Caravanserai = Nabataeans/Desert-Oasis-Camel, Caravansary = Songhai/Sahel-Niger-Monotheism) by its Religion-synergy mechanic: +1% Gold from every Worship Place in the empire (Z. 2722 pattern). This makes Bazaar the ONLY Currency-era regional economic building with religious infrastructure scaling. Pilgrimage-belief-conditional bonus reflects Hajj as one of the Five Pillars of Islam — the annual pilgrimage to Mecca during Dhul-Hijjah which historically combined religious devotion with massive trade activity (Mawsim al-Hajj). Critical corrections from original entry: Luxury-doubling REMOVED (conflict with Chartered Company Z. 7122 and Exotic Bazaar; mod-systemic Banking-era mechanic, not Currency-era). [Resource] tile bonus REMOVED — overpowered (would give gold from every resource including strategic, bonus, luxury), AND wrong filter syntax (mod uses [resource] lowercase, only seen in one Industrial-era building Z. 4712). Replaced with [Luxury resource] tiles filter (mod-verified Z. 2346, 3554, 8439 — universally valid for luxury-only). Trade Routes bonus increased from +5% to +10% (mod-standard Z. 1494, 3216 — odd values like 5% are not mod-conventional). Tag 'Economic Building' added (Tags.txt). Maintenance 1 added (standard). Native +2 Gold and +1 Culture added (analog to Souk Z. 1067). The Worship-Place-Reich-Synergie (+1% Gold per Worship Place) is the SIGNATURE Bazaar mechanic that ties Arabian commerce to Arabian religion — historically authentic because Arabian bazaars were always located near major religious sites (Mekka-Bazar around Masjid al-Haram, Medina-Suq near Prophet's Mosque). Pilgrimage-belief bonus +1 Gold makes Bazaar especially valuable for religiously focused players adopting the Pilgrimage belief.]"
+		],
+        "hurryCostModifier": 25
+	},
+	{
+		"name": "Rug Market",
+        "uniqueTo": "Persien",
+        "replaces": "Market",
+        "requiredTech": "Currency",
+        "cost": 110,
+        "maintenance": 1,
+        "gold": 2,
+        "culture": 1,
+        "percentStatBonus": {
+			"gold": 10
+        },
+        "specialistSlots": {
+            "Merchant": 1
+        },
+        "uniques": [
+            "'Economic Building'",
+            "[+10]% [Gold] from Trade Routes",
+            "[+1 Gold, +1 Culture] from [{'Agricultural Improvement'} {Cotton}] tiles [in this city]",
+            "[+1 Culture] from [{'Agricultural Improvement'} {Dyes}] tiles [in this city]",
+            "[+5]% [Gold] [in this city] <with [Horse]>",
+            "[+1 Gold] [in this city] <in cities connected to the capital>",
+            "[+1 Culture] [in this city] <during We Love The King Day>",
+            "Comment [The Rug Market is the Persian Market replacement, modeled on the legendary Persian carpet (qali farsi) tradition from the Pazyryk Carpet (5th c. BC, 360,000 knots/m², discovered in a Scythian burial mound 1949, now Hermitage St. Petersburg — oldest surviving knotted carpet in the world) through Sassanid 'Spring of Khusrau' (legendary 9x27m 6th c. AD carpet), Safavid Golden Age under Shah Tahmasp I (1524-1576, first royal kar-khana workshops) and Shah Abbas the Great (1588-1629, who moved the capital to Isfahan in 1598 and built the Naqsh-e-Jahan Square / UNESCO 1979), the Ardabil Carpet (1539-40, signed Maqsud Kashani, V&A London), and the great carpet schools (Tabriz, Isfahan, Kashan, Kerman, Mashhad, Qom, Heriz, Bidjar). Critical corrections from original entry: percentStatBonus gold reduced from +25% to +10% (mod-standard for regional economic buildings — only National Wonders use 15%, +25% would be heavily overpowered). Generic [Luxury resource] tile bonus REMOVED — too broad and would give +1 Gold AND +1 Culture from ALL luxury resources unconditionally; replaced with specific Persian-textile-tradition resources. Cotton-tile bonus added (Z. 1046-1047 Textile Workshop pattern with combined-filter syntax) — Cotton has 'Textile' tag (Z. 1175), spawns in Desert regions (weight 15) matching Persian geography, and is NOT covered by other regional Currency-era buildings (Souk has Dyes/Incense, Khazar Marketplace has Furs/Silk) — creating clear differentiation. Dyes-tile bonus added as CULTURE-ONLY (+1 Culture, no Gold) — Souk already has Gold-Dyes-bonus, so Rug Market gives Culture instead, modeling Persian dyeing artistry (Madder for red, Indigo for blue, Cochineal for crimson) without conflict. Horse-stockpile conditional (+5% Gold <with [Horse]>) added (Z. 1530 Livestock Market pattern) — historically authentic via Persian chapar-courier-system (Achaemenid pony express with Nisaean horses described by Herodotus and Strabo). Trade Routes bonus +10% added (mod-standard Z. 1494, 3216). Capital-connection bonus reflects royal kar-khana atelier network connecting Isfahan/Tabriz/Kashan to the empire. WLTKD-Culture bonus reflects Nowruz (Persian New Year, March 21, Achaemenid origin ~3000 years old, UNESCO 2009 intangible heritage) — historically the main carpet-gift season in Persia. Tag 'Economic Building' added. Maintenance 1 added (standard). Differentiated from: (1) universal Textile Workshop (Animal Husbandry tech, 'Light Industry' tag, Production-from-Textile + Gold-from-Silk/Dyes — Rug Market focuses Cotton-Gold-Culture and Dyes-Culture, no overlap); (2) Souk (Palestine, Dyes/Incense plantations — Rug Market avoids Gold-Dyes conflict by giving Culture-only); (3) Khazar Marketplace (Khazaria, Furs/Silk plantations — Rug Market avoids Silk entirely); (4) Bazaar (Arabia, Worship-Place religion synergy — Rug Market is secular Persian-Hofatelier focused); (5) Caravanserai (Nabataeans, Desert/Oasis/Camel — Rug Market is urban-Hofatelier focused, not desert-caravan); (6) Caravansary (Songhai, Niger river — different geography); (7) Exotic Bazaar (Caliphate NW, Luxury-doubling — Rug Market is regular regional building). The Horse-stockpile mechanic is unique among Currency-era regional buildings (none of the other six use it).]"
+		],
+        "hurryCostModifier": 25
+	},
+	{
+		"name": "Library of Celsus",
+        "uniqueTo": "Greece",
+        "replaces": "Library",
+        "requiredTech": "Writing",
+        "cost": 70,
+        "maintenance": 2,
+        "culture": 1,
+        "specialistSlots": {
+			"Scientist": 2,
+            "Artist": 1
+        },
+		"uniques": [
+            "'Educational Building'",
+            "[+1 Science] per [4] population [in this city]",
+            "[+10]% Great Person generation [in this city]",
+            "[+1 Happiness] <after discovering [Drama and Poetry]>",
+            "[+1 Culture] [in this city] <after discovering [Drama and Poetry]>",
+            "[+1 Science] [in this city] <after discovering [Philosophy]>",
+            "[+1 Culture] [in this city] <during We Love The King Day>",
+            "Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
+            "Comment [The Library of Celsus (Library of Celsus, Bibliotheca Celsi) is the Mediterranean Library replacement, modeled on the famous library at Ephesus built 114-135 AD by Tiberius Iulius Aquila Polemaeanus as a tomb-monument and library for his father Tiberius Iulius Celsus Polemaeanus (~45-120 AD) — the FIRST Greek-descent consul of Roman history (suffect consul 92 AD under Domitian) and proconsul of Asia (105-107 AD), friend of Trajan and Hadrian. The library was the THIRD-LARGEST in antiquity (after Alexandria's 500,000-700,000 scrolls and Pergamon's 200,000) housing 12,000-15,000 scrolls in 30 wall niches with revolutionary double-wall climate-control technology preventing humidity damage to parchment. The 16-meter facade with four allegorical statues — Sophia (Wisdom), Episteme (Knowledge), Ennoia (Thought), Arete (Virtue) — was reconstructed 1970-1978 under Volker Michael Strocka in an anastilosis project; originals today at Ephesos Museum Vienna. Mod-mechanically a regular Library replacement (not a National Wonder or World Wonder) — clearly differentiated from: (1) Library (universal, +1 Science per 5 Pop, 1 Scientist + 1 Artist) by improved per-4-pop scaling, +1 Culture native, 2 Scientists + 1 Artist (extra Scientist), +10% Great Person generation, and Drama-Poetry-Culture/Philosophy-Science tech-after bonuses; (2) The Great Library (universal World Wonder Z. 1584, free Library + 50% Library-Production-empire-wide, Alexandria-themed) by being regional regular building not Wonder; (3) The First University (universal World Wonder Z. 1601, free Great Scientist) by Writing-tech not Education; (4) The Acropolis (Mediterranean NW replaces National Epic, Drama-and-Poetry tech, +33% Science in this city + 25% GP-generation) by being Writing-tier Library-replacement not Drama-tier National-Epic-replacement; (5) University (universal, Education tech, requires Library, +25% Science + +10% Culture) by being earlier-tier Library replacement. Per-4-Pop Science scaling differentiates from Library's per-5 (mod-pattern Z. 1481). +10% GP generation is MODERATE compared to NW-standard +25% (Z. 1579, 2008, 2027, 2047, 2066 use +25% for NWs). Philosophy-conditional +1 Science reflects Ephesus's role as philosophy center (Heraclitus of Ephesus, the famous pre-Socratic philosopher 535-475 BC, was a native of the city). Drama-and-Poetry-conditional +1 Culture reflects Greek dramatic tradition (Ephesus's Great Theatre seated 25,000). WLTKD-Culture bonus reflects Ephesian festival days: Pythian Games at Delphi, Artemis-festival at Ephesus (Artemision in May), and Hadrianeia under Emperor Hadrian. Artifact-provision and Drama-Happiness inherited from Library standard (Z. 1482-1483).]"
+        ],
+        "hurryCostModifier": 25,
+        "civilopediaText": [
+			{
+				"text": "Die *Library of Celsus* — auch *Library of Celsus* (englisch), *Bibliothek des Celsus* (deutsch), *Bibliotheca Celsi* (lateinisch), *Βιβλιοθήκη τοῦ Κέλσου* (griechisch) — repräsentiert eine der weltberühmtesten Bibliotheken der römischen Kaiserzeit. Sie wurde zwischen 114 und 135 nach Christus in der griechisch-römischen Großmetropole *Ephesos* (heute Türkei) als außergewöhnliche Trifunktionalität errichtet: zugleich Grabmonument für einen verstorbenen Vater, öffentlich zugängliche Bibliothek, und repräsentative Schaufassade der senatorischen Elite-Familie der Polemaeani."
+			}
+		]
+	},
+	//Bilder
+	{
+		"name": "Satrap's Court",
+        "uniqueTo": "Persia",
+        "replaces": "Courthouse",
+        "requiredBuilding": "Town Hall",
+        "requiredTech": "Philosophy",
+        "cost": 90,
+        "maintenance": 3,
+        "happiness": 1,
+        "specialistSlots": {
+			"Governor": 1
+        },
+        "uniques": [
+            "'Political Building'",
+            "[-10]% Unhappiness from [Population] [in this city]",
+            "[+1 Culture, +1 Gold] from every [Governor] <in this city>",
+            "[+1 Gold] [in this city] <in cities connected to the capital>",
+            "Comment [Satrap's Court is the Persian Courthouse replacement (NOT Market — the original Market-replacement conflicted with Rug Market, which already occupies the Persian Market slot, and commerce contradicts the satrapy's administrative identity). Mod-systemic justification: the base Courthouse (Z. 2309) carries 'Unavailable <for [Central and West Asia] Civilizations> <after adopting [Monotheism]>', meaning the mod deactivates the Courthouse for the Persian cultural region and leaves an intended Courthouse-shaped gap with NO existing replacement — Satrap's Court fills exactly this gap. It parallels Satrap's Manor (Z. 1422, Central and West Asia, Town Hall governance tied to Unity): Manor = Town Hall tier (Writing/Unity), Court = Courthouse tier (Philosophy). Models the Achaemenid satrapy system organized by Darius I (522-486 BC) into ~20-23 provinces with fixed annual tribute (Herodotus III.89-95, ~14,560 talents). The satrap (Old Persian xšaçapāvan, 'protector of the province') was the royal governor handling administration, justice, tribute collection and provincial defense. requiredTech changed from Currency (commerce, only set for the Market-replacement) to Philosophy (matches Courthouse Z. 2319). Merchant slot replaced with Governor (Administrator does not exist in the mod, only Governor Z. 39; the satrap IS a royal governor). Resource-tile gold REMOVED (invalid [Resource] uppercase filter + commercial Market mechanic). happiness reduced 2->1 (Courthouse baseline Z. 2311). hurryCostModifier removed (legacy Market copy; Courthouse has none). Destroyed-when-captured deliberately omitted (Courthouse lacks it; historically conquerors kept the satrapy system - Alexander, Seleucids, Parthians/Sasanians as marzban). Governor-based Culture+Gold (Z. 3465 pattern) models tribute collection (Gold) and royal authority representation (Culture) through the satrap's office - local, bound to the office, no horizontal snowball. Capital-connection Gold models the Royal Road angarium (Sardis-Susa ~2700 km, Herodotus VIII.98) channeling provincial tribute to the center. NOTE: nation-name consistency - Rug Market uses 'Persien', this uses 'Persia'; Unciv matches names exactly, so unify to ONE spelling. RECOMMENDATION: if 'Persia' represents the mod's Central-and-West-Asia civ, consider uniqueTo 'Central and West Asia' + 'Only available <after adopting [Monotheism]>' to slot precisely into the Courthouse deactivation window and pair with the existing Satrap's Manor.]"
+		]
+	},
+	{
+		"name": "Ordensburg",
+        "uniqueTo": "Europa",//Germany, Polen
+        "requiredBuilding": "Monastery",
+        "requiredTech": "Theology",
+        "cost": 160,
+        "maintenance": 2,
+        "faith": 1,
+        "cityStrength": 7,
+        "cityHealth": 20,
+        "uniques": [
+            "'Static Defense'",
+            "Only available <when religion is enabled>",
+            "Only available <after adopting [Divine Right]>",
+            "New [{'Noble Army'} {Land}] units start with [10] XP [in this city]",
+            "May buy [Knights Templar] units with [Faith] for [2] times their normal Production cost <before the [Imperial era]> [in this city]",
+            "[+1 Faith] [in this city] <with a garrison>",
+            "[+1 Production] [in this city] <when at war>",
+            "Destroyed when the city is captured",
+            "Comment [Ordensburg is the fortified commandery (Komturei) of a monastic knightly order, modeled on the Teutonic Order castles of the Baltic (Marienburg/Malbork from 1309) built on the Kastellschema — cloister and castle in one square plan housing a convent of knight-brothers under a Komtur. Systemic position: fusion of the 'Static Defense' chain (Walls Z. 1697 -> Watch Tower -> Bastion Z. 4047) and the religion chain (requires Monastery Z. 3291, Theology). Gated behind the Divine Right policy (user-confirmed) plus religion-enabled. Faith-recruits the Knights Templar unit (user-confirmed) using the balanced mod-standard purchase syntax: 'with [Faith] for [2] times their normal Production cost <before the [Imperial era]>' (building-buy pattern Z. 1563 combined with belief cost-multiplier pattern Beliefs Z. 738/1936) — provides a BUILDING-based route to the specific order-knight without requiring the Monastic Warrior belief, complementary to (not duplicating) that Enhancer belief which buys generic Standing-Army units in Monastery cities. Balance corrections retained regardless of reference validity: original +25% Strength for [All] units removed (World Wonder Castle of Great Egret grants only +15% same mechanic Z. 4002, Holy War belief only +10% — a normal building must not exceed both); knight identity instead via Noble-Army XP (Barrack pattern Z. 926) and the Templar recruitment. Mine production bonus removed (no historical link — commanderies managed farmland, mills, tolls, not mines); replaced with [+1 Production] <when at war> for the armory-supply function during campaigns (Preussenreisen). Garrison-conditional Faith is the signature: only a manned Ordensburg lives as a spiritual community (prayer and sword). Destroyed when captured: Tannenberg 1410 and the Second Peace of Thorn 1466 secularized conquered order houses.]"
+		]
+	},
+	{
+		"name": "Conciliar Assembly", //Icon fertig
+		"uniqueTo": "Papal States",
+        "cost": 0,
+        "culture": 1,
+        "faith": 1,
+        "happiness": 1,
+        "uniques": [
+            "Unsellable",
+            "Unbuildable <hidden from users>",
+            "Only available <when religion is enabled>",
+            "[+1 Science] from every [Chapel]",
+            "[+50]% Natural religion spread [in this city]",
+            "Provides [1] [Piety] <when [Religious] Victory is enabled>",
+            "Destroyed when the city is captured",
+            "Comment [Permanent institutional state marker: the established conciliar order (conciliarism — Constance 1414-1418, Basel 1431-1449). Marker convention per Z. 72-81/3255+ (cost 0, Unsellable, Unbuildable hidden), granted exclusively by the Council of St. Peter's event choice 'Proclaim the Unity of Doctrine'. +1 Science per Chapel: councils standardized doctrine and teaching through the parish network (flat from-every form verified Beliefs Z. 767; single stat to avoid outshining Follower beliefs Z. 1217). Local +50% spread: the council seat radiates unified doctrine (Z. 3391 pattern). Piety legitimate because the marker is singular per civ (mod rule: Piety only from NW/WW or equivalently gated sources). Destroyed when captured: the conciliar order collapses with the capital.]"
+		]
+	},
+	{
+		"name": "Convocation of St. Peter's Council",
+        "uniqueTo": "Papal States",
+        "cost": 60,
+        "uniques": [
+            "Only available <when religion is enabled>",
+            "Only available <after enhancing a religion>",
+            "Only available <in [Capital] cities>",
+            "Triggers a [Council of St. Peter's] event",
+            "Remove [Convocation of St. Peter's Council] [in this city] <hidden from users>",
+            "Comment [Player-initiated convocation following the mod's action-building pattern (Z. 62-73: build -> Triggers a [X] event -> self-removal). Gated: religion enabled (Z. 1920 convention), after enhancing a religion (Z. 4142 — a council presupposes a mature church), capital only (Z. 38), once per civilization (Z. 4722). Historically councils were convoked by pope or emperor — a deliberate act, not a random occurrence.]"
+		]
+	},
+	{
+		"name": "Reformist Seminary",
+        "requiredBuilding": "Chapel",
+        "cost": 120,
+        "maintenance": 1,
+        "science": 1,
+        "faith": 1,
+        "specialistSlots": {
+			"Scientist": 1
+		},
+		"greatPersonPoints": {
+			"Great Prophet": 1
+        },
+        "uniques": [
+            "'Educational Building'",
+            "Only available <when religion is enabled>",
+            "Only available <after adopting [Reformation]>",
+            "Destroyed when the city is captured",
+            "Comment [Reformist Seminary is a confessional preacher-training academy of the Reformation era (Geneva Academy 1559, Wittenberg) — the Protestant mirror of the Jesuit College.]"
+		],
+		"requiredTech": "Education"
+	},
+	{
+		"name": "Pilgrim Hospice",
+        "cost": 80,
+        "maintenance": 1,
+        "faith": 1,
+        "gold": 1,
+        "uniques": [
+            "'Infrastructure'",
+            "Only available <when religion is enabled>",
+            "Only available <in cities connected to the capital>",
+            "[All] Units adjacent to this city heal [5] HP per turn when healing",
+            "[+1 Gold, +1 Faith] [in this city] <in cities with a ['Worship Place']>",
+            "[+25]% Natural religion spread [in this city]",
+            "[+1 Happiness] [in this city] <during We Love The King Day>",
+            "Comment [Pilgrim Hospice is the charitable way-station of the pilgrimage routes (Great St. Bernard Hospice 1049, Camino de Santiago hospices at Roncesvalles and Burgos, the Jerusalem pilgrim hospital ~1070 from which the Knights Hospitaller emerged, Islamic ribat/khan stations of the Darb al-Hajj). Function triad: care of the sick, lodging on the route, hospitality as worship. CRITICAL CORRECTIONS from original: '[+1 Gold, +1 Faith] for each global city following this religion' REMOVED — global-city scaling is exclusively belief territory in this mod (Z. 463/472/481/579), and the Enhancer belief Pilgrimage (Beliefs Z. 904-910) already carries '[+2 Faith] for each global city following this religion'; a buildable per-city building with the same scaling would snowball explosively in wide-religion play and devalue the belief. 'connected to capital by road' is INVALID syntax — corrected to the verified '<in cities connected to the capital>' (Z. 170/183/200), modeling the pilgrim-route logic. WLTKD line syntax corrected to '[+1 Happiness] [in this city] <during We Love The King Day>'. Native values reduced 2/2 to 1/1 (a hospice is poorer than the Chapel it serves). ADDED core care mechanic previously missing: '[All] Units adjacent to this city heal [5] HP per turn when healing' — exact Healer's Hut pattern (Z. 880, Hospital Z. 4637 has 10 HP); a chain of hospices along the imperial roads becomes a strategic healing network, the mod-mechanical translation of the pilgrimage route. Gold/Faith gated to cities with a ['Worship Place'] (Z. 1204 conditional): alms and endowments flow only where a sanctuary draws pilgrims — same coupling logic established for the Arabia Bazaar. Spread +25% is the lowest tier of the spread ladder (Mission +50%, House of God +100%). Belief interlock instead of duplication: the Enhancer Pilgrimage provides global scaling and holy-city growth AND buys ['Worship Place'] buildings with Faith, which makes the Hospice's worship-place condition easier to activate — building and belief reinforce the same pilgrimage playstyle without copying mechanics. No destroyed-when-captured: conquerors typically maintained charitable institutions (as with Healer's Hut and Hospital in this mod).]"
+		],
+		  "requiredTech": "Theology"
+    },
+	{
+		"name": "Inquisition Tribunals",
+        "cost": 0,
+        "uniques": [
+            "'Organise Place'",
+            "[-25]% Natural religion spread [in this city]",
+            "[+1 Happiness] [in this city] <in cities following our religion>",
+            "[-2 Happiness] [in this city] <in cities not following a [your] religion>",
+            "Unbuildable <hidden from users>",
+            "Only available <when religion is enabled>",
+            "Destroyed when the city is captured"
+        ],
+		"requiredTech": "Theology"
+    },
+	{
+        "name": "Jesuit College",
+		"requiredBuilding": "University",
+		"maintenance": 3,
+        "specialistSlots": {
+			"Scientist": 1
+		},
+        "greatPersonPoints": {
+            "Great Scientist": 1
+        },
+        "uniques": [
+            "'Educational Building'",
+            "[+1 Science] from every specialist [in this city] <in cities following our religion>",
+            "Only available <when religion is enabled>",
+            "Destroyed when the city is captured"
+        ]
+		"requiredTech": "Theology"
+	},
+	{
+		"name": "Papal Treasury",
+        "isNationalWonder": true,
+		"uniqueTo": "Papal States",
+		"requiredBuilding": "Holy See",
+        "cost": 200,
+        "gold": 4,
+        "percentStatBonus": {
+            "gold": 15
+        },
+        "specialistSlots": {
+            "Governor": 1
+        },
+        "uniques": [
+			"'Core of Religion'",
+            "[+1 Gold] from every [Governor] <in this city>",
+            "Only available <when religion is enabled>",
+            "Can only be built <in [in holy cities] cities>"
+        ],
+		"requiredTech": "Theology"
+    },
+	{
+		"name": "Papal Chancellery",
+        "isNationalWonder": true,
+		"uniqueTo": "Papal States",
+		"requiredBuilding": "Holy See",
+        "cost": 180,
+        "culture": 1,
+        "specialistSlots": {
+            "Governor": 1
+        },
+        "uniques": [
+            "'Political Building'",
+            "[+1 Culture] from every [Governor] <in this city>",
+            "Only available <when religion is enabled>",
+            "Can only be built <in [in holy cities] cities>"
+        ],
+		"requiredTech": "Theology"
+    },
+	{
+		"name": "The Three Towers of San Marino",
+        "uniqueTo": "San Marino",
+        "requiredBuilding": "Walls",
+        "faith": 1,
+        "culture": 1,
+        "cityStrength": 5,
+        "cityHealth": 25,
+        "uniques": [
+            "'Static Defense'",
+            "[+25]% Strength <for [All] units> <when defending> <in this city>",
+            "Must be next to [Mountain]",
+            "Destroyed when the city is captured"
+        ],
+        "requiredTech": "Masonry",
+        "hurryCostModifier": 25
+    },
+	{
+		"name": "Oppidum",
+        "uniqueTo": "Gaul",
+        "replaces": "Walls",
+        "happiness": 1,
+        "cityStrength": 5,
+        "cityHealth": 45,
+        "uniques": [
+            "'Static Defense'",
+            "[+1 Production] from [Mine] tiles [in this city]",
+            "Destroyed when the city is captured"
+        ],
+        "requiredTech": "Masonry",
+        "hurryCostModifier": 25
+    },
+	{
+		"name": "Casemate",
+        "uniqueTo": "Luxembourg",
+        "requiredBuilding": "Barrack",
+        "maintenance": 2,
+        "cityStrength": 6,
+        "cityHealth": 25,
+        "uniques": [
+            "'Static Defense'",
+            "[+15]% Strength for cities <in this city>",
+            "Destroyed when the city is captured"
+			],
+        "requiredTech": "Steels",
+        "hurryCostModifier": 25
+    },
+	{
+        "name": "Inscription Wall",
+        "cost": 65,
+        "culture": 1,
+        "cityStrength": 3,
+        "uniques": [
+            "'Cultural Building'",
+            "[-1]% Culture cost of natural border growth [in this city]",
+            "Destroyed when the city is captured"
+        ],
+		"requiredTech": "Masonry",
+        "hurryCostModifier": 25
+    },
+	{
+		"name": "Krepost",
+        "uniqueTo": "The Kievan Rus",
+        "replaces": "Barrack",
+        "maintenance": 2,
+        "cityStrength": 5,
+        "uniques": [
+            "'Military Building'",
+            "All newly-trained [Military] units [in this city] receive the [Hardened] promotion",
+            "New [{'Standing Army'} {Land}] units start with [10] XP [in this city]",
+            "New [{'Noble Army'} {Land}] units start with [10] XP [in this city]",
+            "Provides [1] [Standing Army Maintenance]",
+            "[-25]% Culture cost of natural border growth [in this city]",
+            "Destroyed when the city is captured"
+        ],
+        "requiredTech": "Copper Working",
+        "hurryCostModifier": 25
+    },
+	{
+		"name": "Legion Camp",
+        "replaces": "Prison Camp",
+        "uniqueTo": "Rome",
+        "cost": 90,
+        "maintenance": 2,
+        "cityStrength": 5,
+        "cityHealth": 20,
+        "percentStatBonus": {
+			"food": -10
+        },
+        "uniques": [
+            "'Military Building'",
+            "[+90]% weight to this choice for AI decisions <hidden from users>",
+            "Can only be built <in [Annexed] cities>",
+            "Removes extra unhappiness from annexed cities",
+            "[+15]% Production when constructing [Melee] units [in this city]",
+            "Free [Auxiliary] appears",
+            "Destroyed when the city is captured"
+        ],
+        "requiredTech": "Construction"
+    },
+	{
+		"name": "Barbican",
+        "uniqueTo": "Poland",
+        "requiredBuilding": "Walls",
+        "cost": 110,
+        "maintenance": 1,
+        "culture": 1,
+        "cityStrength": 4,
+        "uniques": [
+            "'Static Defense'",
+            "Enemy [Military] units must spend [1] extra movement points when inside your territory <in this city>",
+            "Destroyed when the city is captured"
+        ],
+        "requiredTech": "Engineering",
+        "hurryCostModifier": 25
+    },
+	{
+		"name": "Sapitu",
+        "uniqueTo": "Akkad",
+        "replaces": "Barrack",
+        "maintenance": 2,
+        "cityStrength": 5,
+        "uniques": [
+            "'Military Building'",
+            "All newly-trained [Military] units [in this city] receive the [Hardened] promotion",
+            "New [{'Standing Army'} {Land}] units start with [10] XP [in this city]",
+            "New [{'Noble Army'} {Land}] units start with [10] XP [in this city]",
+            "Provides [2] [Standing Army Maintenance]",
+             "Destroyed when the city is captured"
+        ],
+        "requiredTech": "Copper Working",
+        "hurryCostModifier": 25
+    },
+	{
+		"name": "Heitt Bad",
+        "uniqueTo": "Norway",
+        "replaces": "Bathhouse",
+        "maintenance": 2,
+        "culture": 1,
+        "happiness": 1,
+        "uniques": [
+            "'Cultural Building'",
+            "[+1 Happiness] <in cities with at least [10] [Population]>",
+            "[+1 Happiness] in cities on [Tundra] tiles",
+            "[15]% Food is carried over after population increases [in this city]"
+        ],
+        "requiredTech": "Iron Working"
+    },
+	{
+		"name": "Thermae",
+        "uniqueTo": "Rome",
+        "replaces": "Bathhouse",
+        "maintenance": 3,
+        "culture": 2,
+        "happiness": 1,
+        "uniques": [
+            "'Cultural Building'",
+            "[+1 Happiness] <in cities with at least [10] [Population]>",
+            "[+1 Happiness] <in cities with at least [20] [Population]>",
+            "[+1 Happiness] <in cities with a [Aqueduct]>",
+            "[10]% Food is carried over after population increases [in this city]"
+        ],
+        "requiredTech": "Iron Working",
+        "hurryCostModifier": 25
+    },
+	{
+		"name": "Colosseum",
+        "uniqueTo": "Rome",
+        "replaces": "Arena",
+        "cost": 140,
+        "maintenance": 3,
+        "happiness": 1,
+        "culture": 2,
+        "gold": 1,
+        "uniques": [
+            "'Entertainment Building'",
+            "Instantly provides [1] [Artifact] <before the [Industrial era]>",
+            "Only available <after adopting [Militant]>",
+            "[+1 Happiness] <in cities with at least [10] [Population]>",
+            "[-15]% Unhappiness from [Population] [in this city]",
+            "[+1 Happiness] [in this city] <when above [50] [Slaves]>",
+            "Destroyed when the city is captured"
+        ],
+        "requiredTech": "Drama and Poetry",
+        "hurryCostModifier": 25
+    },
+	{
+		"name": "Riding Arena",
+        "cost": 90,
+        "maintenance": 2,
+        "culture": 1,
+        "uniques": [
+            "'Military Building'",
+            "New [Rider] units start with [10] XP [in this city]",
+            "New [Assault] units start with [10] XP [in this city]",
+            "[+1 Culture] from [Horse] tiles [in this city]",
+            "Destroyed when the city is captured"
+        ],
+        "requiredBuilding": "Stable",
+        "requiredTech": "Tactics",
+        "hurryCostModifier": -25
+    },
+	{
+		"name": "Odeon",
+        "uniqueTo": "Greece",
+        "cost": 100,
+        "maintenance": 1,
+        "culture": 2,
+        "gold": 1,
+        "specialistSlots": {
+			"Artist": 1
+        },
+        "greatPersonPoints": {
+            "Great Artist": 1
+        },
+        "uniques": [
+            "'Cultural Building'",
+            "Destroyed when the city is captured"
+        ],
+        "requiredBuilding": "Monument",
+        "requiredTech": "Drama and Poetry",
+        "hurryCostModifier": 25
+    },
+    {
+		"name": "Hippodrome",
+        "replaces": "Amphitheater",
+        "uniqueTo": "Byzantium",
+        "maintenance": 1,
+        "happiness": 1,
+        "culture": 2,
+        "specialistSlots": {
+		    "Artist": 1
+        },
+        "uniques": [
+            "'Entertainment Building'",
+            "[-10]% Unhappiness from [Population] [in this city]",
+            "[+1 Happiness] [in capital]",
+            "Destroyed when the city is captured"
+        ],
+        "requiredBuilding": "Monument",
+        "requiredTech": "Drama and Poetry",
+        "hurryCostModifier": 25
+    },
+	{
+		"name": "Puppet Theater",
+        "cost": 120,
+        "maintenance": 2,
+        "culture": 1,
+        "faith": 1,
+        "happiness": 1,
+        "uniques": [
+            "'Cultural Building'",
+            "[+2 Culture] per [4] social policies adopted",
+            "[+10]% Natural religion spread [in this city]",
+            "Destroyed when the city is captured"
+        ],
+        "requiredBuilding": "Amphitheater",
+        "requiredTech": "Engineering",
+        "quote": "'Grace appears most purely in that human form which either has no consciousness or an infinite one, that is, in the puppet or in the god.' - Heinrich von Kleist, On the Marionette Theatre"
+    },
+	{
+		"name": "Lavvu Camps",
+        "replaces": "Circus",
+        "uniqueTo": "The Sami",
+        "cost": 75,
+        "happiness": 2,
+        "food": 2,
+        "gold": 1,
+        "requiredNearbyImprovedResources": ["Deer"],
+        "uniques": [
+            "'Entertainment Building'",
+            "[+2 Culture] <after discovering [Industrialization]>"
+        ],
+        "requiredBuilding": "Town Square",
+        "requiredTech": "Stirrup",
+        "hurryCostModifier": 25
+    },
+	{
+		"name": "Syssitia",
+        "uniqueTo": "Sparta",
+        "replaces": "Circus",
+        "cost": 50,
+        "happiness": 2,
+        "food": -1,
+        "uniques": [
+            "'Entertainment Building'",
+            "[+1 Happiness, +1 Culture] [in this city] <with a garrison>"
+        ],
+        "requiredBuilding": "Town Square",
+        "requiredTech": "Stirrup",
+        "hurryCostModifier": 25
+    },
+	{
+		"name": "Veche",
+        "uniqueTo": "The Kievan Rus",
+        "replaces": "Town Hall",
+        "maintenance": 5,
+        "happiness": 2,
+        "culture": 2,
+        "cityStrength": 2,
+        "specialistSlots": {
+			"Governor": 1
+        },
+        "greatPersonPoints": {
+            "Great Merchant": 1
+        },
+        "uniques": [
+            "'Political Building'",
+            "Unavailable <for [Mediterranean] Civilizations> <after adopting [Unity]> <hidden from users>",
+            "Unavailable <for [Central and West Asia] Civilizations> <after adopting [Unity]> <hidden from users>",
+            "Unavailable <for [Europa] Civilizations> <after adopting [Unity]> <hidden from users>",
+            "[+20]% weight to this choice for AI decisions <hidden from users>",
+            "Destroyed when the city is captured"
+        ],
+        "requiredTech": "Writing"
+    },
+	{
+		"name": "Bullring",
+        "uniqueTo": "Mediterranean",
+        "cost": 75,
+        "maintenance": 1,
+        "happiness": 2,
+        "gold": 1,
+        "requiredNearbyImprovedResources": ["Bovine"],
+        "uniques": [
+            "'Entertainment Building'",
+            "Destroyed when the city is captured"
+        ],
+        "requiredTech": "Construction",
+        "hurryCostModifier": 25
+    },
+	{
+		"name": "Salon",
+        "uniqueTo": "France",
+        "cost": 150,
+        "maintenance": 2,
+        "culture": 2,
+        "science": 1,
+        "specialistSlots": {
+			"Artist": 1,
+            "Scientist": 1
+        },
+        "uniques": [
+            "'Cultural Building'",
+            "[+1 Science] from every specialist [in this city] <after adopting [Humanism Complete]>",
+            "Destroyed when the city is captured"
+        ],
+        "requiredBuilding": "Amphitheater",
+        "requiredTech": "Acoustics",
+        "hurryCostModifier": 25
+    },
+	{
+		"name": "Schola Militarum",
+        "uniqueTo": "Rome",
+        "cost": 110,
+        "maintenance": 1,
+        "science": 1,
+        "uniques": [
+            "'Military Building'",
+            "New [{Military} {Land}] units start with [5] XP [in this city]",
+            "Destroyed when the city is captured"
+        ],
+        "requiredBuilding": "Barrack",
+        "requiredTech": "Civil Service",
+        "hurryCostModifier": 25
+    },
+	{
+		"name": "Cathedral School",
+        "cost": 130,
+        "maintenance": 1,
+        "science": 2,
+        "faith": 1,
+        "specialistSlots": {
+			"Governor": 1
+        },
+        "uniques": [
+            "'Educational Building'",
+            "[+1 Science] [in this city] <after adopting [Scholasticism]>",
+            "[+25]% Production when constructing [University] buildings [in this city]",
+            "Only available <before adopting [Reformation]>",
+            "Only available <when religion is enabled>",
+            "Destroyed when the city is captured"
+        ],
+        "requiredBuilding": "Cathedral",
+        "requiredTech": "Theology",
+        "quote": "'Learn everything; you will see afterwards that nothing is superfluous.' - Hugh of Saint Victor, Didascalicon",
+        "hurryCostModifier": 25
+    },
+	{
+		"name": "Nautical School",
+        "uniqueTo": "Portugal",
+        "cost": 200,
+        "maintenance": 2,
+        "science": 2,
+        "greatPersonPoints": {
+			"Great Merchant": 2
+        },
+        "uniques": [
+            "'Educational Building'",
+            "'Marine Infrastructure'",
+            "Must be next to [Coast]",
+            "New [{Water} {Military}] units start with [10] XP [in this city]",
+            "[+1 Gold, +1 Science] from [Deep Sea Fishing Boats] tiles [in this city]",
+            "Destroyed when the city is captured"
+        ],
+        "requiredTech": "Cartography",
+        "hurryCostModifier": 25
+    }
+	{
+		"name": "Grand Knight School",
+        "isWonder": true,
+        "cost": 300,
+        "culture": 2,
+        "uniques": [
+            "All newly-trained [Close Combat] units [in this city] receive the [Shock Doctrine] promotion",
+            "All newly-trained [Assault] units [in this city] receive the [Shock Doctrine] promotion",
+            "Only available <if [No Wonder] is not constructed> <hidden from users>"
+        ],
+        "requiredTech": "Tactics",
+        "quote": "'He was a verray, parfit gentil knyght.' - Geoffrey Chaucer, The Canterbury Tales",
+        "hurryCostModifier": 25
+    }
+	{
+		"name": "Forum",
+        "maintenance": 3,
+        "culture": 1,
+        "specialistSlots": {
+			"Scientist": 1,
+            "Artist": 1,
+            "Governor": 1
+        },
+	    "greatPersonPoints": {
+			"Great Strategist": 1
+        },
+        "uniques": [
+            "'Political Building'",
+            "'Cultural Building'",
+            "Instantly provides [1] [Artifact] <before the [Industrial era]>",
+            "[+25]% Great Person generation [in this city]",
+            "Only available <after adopting [Scholarship]>",
+            "Destroyed when the city is captured"
+        ],
+        "requiredTech": "Philosophy",
+        "quote": "'Whatever anyone does or says, I must be good; just as if the gold, or the emerald, or the purple were always saying: whatever anyone does or says, I must be emerald and keep my color.' - Marcus Aurelius, Meditations",
+        "hurryCostModifier": 25
+    },
+	{
+		"name": "Akademia",
+        "uniqueTo": "Greece",
+        "replaces": "Forum",
+        "maintenance": 3,
+        "culture": 1,
+        "science": 1,
+        "specialistSlots": {
+			"Scientist": 2,
+            "Artist": 1
+        },
+        "greatPersonPoints": {
+			"Great Strategist": 1,
+            "Great Scientist": 1
+        },
+        "uniques": [
+            "'Political Building'",
+            "'Cultural Building'",
+            "Instantly provides [1] [Artifact] <before the [Industrial era]>",
+            "[+25]% Great Person generation [in this city]",
+            "Only available <after adopting [Scholarship]>",
+            "Destroyed when the city is captured"
+        ],
+        "requiredTech": "Philosophy",
+        "quote": "'Let no one ignorant of geometry enter here.' - Inscription over the entrance to Plato's Academy",
+        "hurryCostModifier": 25
+    },
+	{
+		"name": "College of Rhetoric",
+        "uniqueTo": "Rome",
+        "replaces": "University",
+        "maintenance": 5,
+        "culture": 1,
+        "percentStatBonus": {
+			"science": 25,
+            "culture": 10
+        },
+        "specialistSlots": {
+			"Scientist": 2,
+            "Artist": 1,
+            "Governor": 1
+        },
+        "uniques": [
+			"'Educational Building'",
+            "[Great Artist] is earned [+1]% faster",
+            "[Great Strategist] is earned [+1]% faster",
+            "[Great Scientist] is earned [+1]% faster",
+            "Gain a free [Famous Academy] [in this city] <with [Academic Research]>"
+        ],
+        "requiredBuilding": "Library",
+        "requiredTech": "Education",
+        "quote": "'The orator we are seeking is the good man skilled in speaking.' - Quintilian, Institutio Oratoria",
+        "hurryCostModifier": 33
+    },
+	{
+		"name": "Madrasa",
+        "cost": 130,
+        "maintenance": 2,
+        "faith": 2,
+        "science": 1,
+        "specialistSlots": {
+			"Scientist": 1
+        },
+        "uniques": [
+            "'Educational Building'",
+            "[+1 Science] [in this city] <after adopting [Theology Conferences]>",
+            "Only available <when religion is enabled>",
+            "Destroyed when the city is captured"
+        ],
+        "requiredBuilding": "Mosque",
+        "requiredTech": "Education",
+        "quote": "'Seek knowledge from the cradle to the grave.' - attributed to the Prophet Muhammad",
+        "hurryCostModifier": 25
+    },
+	{
+		"name": "Althing",
+        "isWonder": true,
+        "cost": 250,
+        "culture": 2,
+        "greatPersonPoints": {
+			"Great Strategist": 1
+        },
+        "uniques": [
+            "'Political Building'",
+            "Must be next to [Tundra]",
+            "[+1 Culture, +1 Production] from [Tundra] tiles [in this city]",
+            "Only available <if [No Wonder] is not constructed> <hidden from users>"
+       ],
+       "requiredTech": "Civil Service",
+       "quote": "'With law shall our land be built, and with lawlessness laid waste.' - Njáls saga",
+       "hurryCostModifier": 25
+    },
+	{
+		"name": "Edubba",
+        "replaces": "Library",
+        "uniqueTo": "Sumeria",
+        "cost": 60,
+        "maintenance": 2,
+        "science": 1,
+        "specialistSlots": {
+			"Scientist": 1,
+            "Artist": 1
+        },
+        "uniques": [
+            "'Educational Building'",
+            "[+1 Science] per [4] population [in this city]",
+            "[+1 Happiness] <after discovering [Drama and Poetry]>",
+            "Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>"
+        ],
+        "requiredTech": "Writing",
+        "hurryCostModifier": 25
+    },
+	{
+		"name": "Marvelous Records",
+	    "isNationalWonder": true,
+	    "cost": 125,
+	    "maintenance": 2,
+	    "culture": 2,
+	    "science": 2,
+	    "specialistSlots": {
+			"Scientist": 1,
+		    "Artist": 1
+	    },
+	    "uniques": [
+	     	"'Cultural Building'",
+	    	"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+	    	"[+1 Culture] for every known Natural Wonder",
+	    	"[+1 Science] from every [Wonder]",
+	    	"Only available <if [Library] is constructed in at least [6] of [non-[Puppeted]] cities>",
+	    	"Cost increases by [30] per owned city"
+	    ],
+	    "quote": "'The good historian must be fearless, uncorrupted, free, the friend of truth and of liberty… relating faithfully everything as it happened.' - Lucian",
+	    "requiredTech": "Education"
+    },
+	{
+		"name": "Etemenanki",
+	    "isWonder": true,
+	    "faith": 2,
+	    "culture": 1,
+		"greatPersonPoints": {
+			"Great Scientist": 1
+	    },
+	    "uniques": [
+		    "Must be on [River]",
+		    "[+1 Faith, +1 Production] from [Flood plains] tiles [in this city]",
+		    "Triggers a global alert upon completion",
+	      	"Only available <before adopting [Monotheism]>",
+	     	"Only available <if [No Wonder] is not constructed> <hidden from users>"
+	    ],
+     	"quote": "'Come, let us build ourselves a city, with a tower that reaches to the heavens, so that we may make a name for ourselves.' - Genesis 11:4",
+     	"requiredTech": "Writing"
+    },
+	{
+		"name": "Urdu School",
+	    "uniqueTo": "South Asia",
+	    "replaces": "Public School",
+	    "maintenance": 10,
+	    "happiness": 1,
+    	"percentStatBonus": {
+			"science": 25,
+		    "culture": 15,
+	    	"production": 5
+     	},
+    	"specialistSlots": {
+	    	"Scientist": 1,
+	    	"Artist": 1
+	    },
+    	"uniques": [
+	    	"'Educational Building'",
+	    	"Only available <in cities without a [Religious School]>",
+    		"Only available <in cities without a [Private School]>",
+    		"[-1 Gold, +1 Science] per [3] population [in this city]",
+    		"[+1 Faith] from every [Scientist] <in this city>"
+    	],
+    	"requiredTech": "Scientific Theory"
+    },
+	{
+		"name": "Literary School",
+	    "replaces": "University",
+	    "uniqueTo": "Bulgaria",
+	    "maintenance": 5,
+	    "culture": 2,
+    	"happiness": 1,
+    	"greatPersonPoints": {
+    		"Great Artist": 1
+    	},
+     	"percentStatBonus": {
+     		"science": 25,
+    		"culture": 10
+    	},
+    	"specialistSlots": {
+    		"Scientist": 1,
+    		"Artist": 1,
+     		"Engineer": 1
+    	},
+    	"uniques": [
+    		"'Educational Building'",
+    		"[Great Artist] is earned [+10]% faster",
+    		"[Great Engineer] is earned [+1]% faster",
+    		"[Great Scientist] is earned [+1]% faster",
+    		"Gain a free [Famous Academy] [in this city] <with [Academic Research]>"
+    	],
+    	"requiredBuilding": "Library",
+     	"requiredTech": "Education",
+    	"hurryCostModifier": 33
+    },
+	{
+		"name": "Glagolitic School",
+	    "replaces": "Library",
+	    "uniqueTo": "Croatia",
+    	"cost": 60,
+	    "maintenance": 2,
+    	"culture": 1,
+    	"specialistSlots": {
+    		"Scientist": 1,
+     		"Artist": 1
+    	},
+    	"uniques": [
+    		"'Educational Building'",
+    		"[+1 Science] per [5] population [in this city]",
+    		"[+1 Happiness] <after discovering [Drama and Poetry]>",
+    		"Instantly provides [2] [Artifact] <in this city> <before the [Industrial era]>",
+     		"[+1 Faith] <in cities following our religion>"
+    	],
+     	"requiredTech": "Writing"
+    },
+	{
+    	"name": "Medrese",
+    	"replaces": "University",
+      	"uniqueTo": "Seljuk",
+    	"maintenance": 5,
+    	"happiness": 1,
+    	"percentStatBonus": {
+    		"science": 25,
+    		"culture": 10
+    	},
+    	"specialistSlots": {
+    		"Scientist": 2,
+    		"Artist": 1,
+    		"Engineer": 1
+    	},
+    	"uniques": [
+    		"'Educational Building'",
+     		"[+2 Faith] <in cities with a major religion>",
+    		"[Great Artist] is earned [+1]% faster",
+    		"[Great Engineer] is earned [+1]% faster",
+    		"[Great Scientist] is earned [+10]% faster",
+    		"Gain a free [Famous Academy] [in this city] <with [Academic Research]>"
+    	],
+    	"requiredBuilding": "Library",
+    	"requiredTech": "Education",
+    	"hurryCostModifier": 33
+    },
+	{
+		"name": "Darbas",
+    	"replaces": "Observatory",
+    	"uniqueTo": "Armenia",
+    	"maintenance": 10,
+    	"science": 2,
+    	"culture": 2,
+    	"percentStatBonus": {
+    		"science": 25
+    	},
+    	"specialistSlots": {
+    		"Artist": 1
+    	},
+    	"uniques": [
+    		"'Research Building'",
+    		"Only available <with [Glass]>",
+    		"Must have an owned [Mountain] within [2] tiles"
+    	],
+    	"requiredBuilding": "University",
+    	"requiredTech": "Heliocentrism"
+    },
+	{
+		"name": "Stoa",
+    	"replaces": "Library",
+    	"uniqueTo": "Greece",
+    	"cost": 60,
+    	"maintenance": 2,
+     	"culture": 2,
+    	"greatPersonPoints": {
+    		"Great Scientist": 1
+    	},
+    	"specialistSlots": {
+    		"Scientist": 1,
+     		"Artist": 1
+    	},
+    	"uniques": [
+    		"'Educational Building'",
+    		"[+1 Science] per [5] population [in this city]",
+		    "[+1 Happiness] <after discovering [Drama and Poetry]>",
+		    "Instantly provides [1] [Artifact] <in this city> <before the [Industrial era]>",
+	        "[+1 Culture, +1 Science] [in this city] <when at war>",
+		    "[+2 Culture] [in this city] <when below [1] Happiness>",
+	    	"[+1 Culture] [in this city] <when not in a Golden Age>",
+	    	"[+2 Science] [in this city] <after discovering [Philosophy]>"
+	    ],
+    	"requiredTech": "Writing"
+    },
+	{
+    	"name": "Religious Ruling",
+    	"cost": 200,
+    	"maintenance": 2,
+    	"specialistSlots": {
+    		"Governor": 2
+    	},
+    	"uniques": [
+    		"'Political Building'",
+	    	"Only available <after adopting [Holy War]>",
+	     	"Hidden when religion is disabled",
+	    	"Can only be built <in [in holy cities] cities>",
+	    	"[+2 Faith] from every [Governor] <in this city>",
+	    	"Provides [5] [Influence Limit]",
+	    	"Provides [1] [Piety] <when [Religious] Victory is enabled> <in cities with at least [8] [Population]>",
+      		"[+10]% [Faith] [in this city] <if [Theocratic Empire] is constructed>"
+    	],
+    	"requiredTech": "Civil Service"
+    },
+	{
+		"name": "Hueyi Teocalli",
+    	"isNationalWonder": true,
+    	"cost": 200,
+    	"faith": 2,
+    	"gold": 1,
+    	"culture": 1,
+    	"specialistSlots": {
+     		"Governor": 1
+    	},
+    	"uniques": [
+    		"'Worship Place'",
+    		"Hidden when religion is disabled",
+    		"Only available <on foreign continents>",
+    		"Only available <in cities following our religion>",
+    		"[+40]% Natural religion spread [in this city]",
+			"[+2 Faith] from every [Governor] <in this city>"
+    	],
+    	"requiredTech": "Cartography"
+    },
+	{
+		"name": "Pura Agung",
+	    "cost": 100,
+	    "maintenance": 1,
+	    "faith": 2,
+	    "food": 1,
+     	"uniques": [
+    		"'Worship Place'",
+    		"Hidden when religion is disabled",
+    		"Only available <in cities following our religion>",
+    		"[+1 Food, +1 Faith] from [Terrace Farm] tiles [in this city]",
+    		"[+1 Faith] from [Manual Farm] tiles [in this city]",
+    		"[+1 Food] [in this city] <in cities with a [Irrigation System]>"
+    	],
+    	"requiredTech": "Theology"
+    },
+	{
+    	"name": "Fushimi Inari Taisha",
+    	"isWonder": true,
+    	"faith": 2,
+    	"culture": 1,
+    	"gold": 1,
+     	"greatPersonPoints": {
+    		"Great Prophet": 1
+    	},
+    	"uniques": [
+    		"'Worship Place'",
+    		"Hidden when religion is disabled",
+    		"Only available <after adopting [Polytheism]>",
+    		"Free [Great Prophet] appears",
+    		"[+2 Gold] from every [Merchant] <in this city>",
+     		"Only available <if [No Wonder] is not constructed> <hidden from users>"
+    	],
+    	"quote": "'Ten thousand gates, and every one the gift of grateful hands.'",
+    	"requiredTech": "Masonry"
+    },
+	{
+		"name": "House of God",
+	    "isNationalWonder": true,
+		"uniqueTo": "Arabia",
+    	"cost": 125,
+	    "faith": 4,
+	    "science": 1,
+	    "percentStatBonus": {
+    		"faith": 20,
+    		"science": 5
+     	},
+    	"specialistSlots": {
+    		"Governor": 2
+    	},
+    	"uniques": [
+    		"'Core of Religion'",
+    		"Provides [1] [Piety] <when [Religious] Victory is enabled>",
+    		"[+100]% Natural religion spread [in this city]",
+			"May choose [1] additional [Founder] beliefs when [founding] a religion",
+			"[-25]% Faith cost of generating Great Prophet equivalents",
+    		"[+3 Faith] from every [Governor] <in this city>",
+			"[+2 Gold] <in cities not following a [your] religion>",
+			"[+1 Faith] from [Desert] tiles [in this city]",
+			"Gain [100] [Faith] <every [30] turns> <(modified by game speed)>",
+			"[-1 Happiness] [in all cities] <when below [2] [Stability]>",
+     		"Religion naturally spreads to cities [+2] tiles away <after adopting [Pilgrimage]>",
+    		"Only available <if [Mosque] is constructed in at least [6] of [non-[Puppeted]] cities>",
+			"Only available <after adopting [Enlightenment from the Lord]>",
+    		"Only available <when religion is enabled>",
+    		"Can only be built <in [in holy cities] cities>"
+    	],
+    	"quote": "'And proclaim the pilgrimage among men: they will come to thee on foot and on every kind of camel.' - Quran 22:27",
+    	"requiredTech": "Theology"
+    },
+	{
+		"name": "Holy See",
+	    "isNationalWonder": true,
+		"uniqueTo": "Papal States",
+	    "cost": 140,
+	    "culture": 3,
+	    "faith": 4,
+	    "gold": 4,
+	    "percentStatBonus": {
+	    	"faith": 25
+	    },
+	    "specialistSlots": {
+    		"Governor": 2,
+    		"Artist": 2,
+	    	"Engineer": 2
+	    },
+    	"uniques": [
+    		"'Core of Religion'",
+    	 	"Provides [1] [Piety] <when [Religious] Victory is enabled> <in cities with at least [15] [Population]>",
+	    	"[+2 Faith] from every [Governor] <in this city>",
+    		"[+2 Faith] from every [Cathedral] [in all cities]",
+	    	"[+1 Culture] from every [Great Improvement]",
+			"Gain [500] [Faith] <upon being declared war on by [Major] Civilizations>",
+	    	"Free [Carroccio] appears <every [60] turns>",
+	    	"Provides [1] [Influence] <when number of [Influence] is less than [Influence Limit]>",
+	    	"Resting point for Influence with City-States following this religion [+10]",
+	    	"Resting point for Influence with City-States following this religion [+10] <when above [1] [Influence]>",
+    		"Gain control over [Unowned] tiles in a [2]-tile radius",
+      		"Allied City-States provide [Gold] equal to [15]% of what they produce for themselves",
+     		"Enables Open Borders agreements",
+			"Gain a free [Diözese] [in all cities]",
+            "Gain a free [Diözese] [in all cities] <upon founding a city>",
+    		"Gain [3] Influence with a [Missionary] gift to a City-State <when above [1] [Influence]>",
+    		"All newly-trained [Missionary] units [in cities following our religion] receive the [Holy Calling] promotion <after discovering [Theology]>",
+	    	"New [Religious] units start with [7] XP [in cities following our religion]",
+	    	"May choose [1] additional [Founder] beliefs when [founding] a religion",
+		    "May choose [1] additional [Enhancer] beliefs when [enhancing] a religion",
+		    "[+45]% Natural religion spread [in all cities]",
+	     	"[+100]% Natural religion spread [in this city]",
+	    	"Only available <after adopting [Papal Primacy]> <after adopting [Monotheism]>",
+	     	"Only available <if [Erzbasilica San Giovanni in Laterano] is constructed>",
+	    	"Only available <if [Cathedral] is constructed in at least [6] of [non-[Puppeted]] cities>",
+			"Costs [15] [Influence]",
+	    	"Can only be built <in [in holy cities] cities>",
+	    	"Unsellable",
+	    	"Hidden when religion is disabled"
+    	],
+	    "quote": "'He has delegated to man the power to act on His behalf. We are His representatives when we relieve suffering and bring joy.'",
+	    "requiredTech": "Theology"
+    },
+	{
+		"name": "St. Basil's Cathedral",
+    	"isWonder": true,
+    	"cost": 625,
+    	"faith": 3,
+    	"greatPersonPoints": {
+    		"Great Artist": 1
+    	},
+    	"uniques": [
+    		"'Worship Place'",
+    		"Gain a free [Cathedral] [in this city]",
+    		"[+1 Food, +1 Production, +1 Culture] from [Tundra] tiles [in this city]",
+    		"Only available <in cities with a [Orthodoxy] religion>",
+        	"Hidden when religion is disabled",
+     		"Only available <if [No Wonder] is not constructed> <hidden from users>"
+    	],
+    	"quote": "'One had a twisted design, red, on a green ground; another, all prickly angles, yellow and black; a third was ornamented with scales of blue and crimson; a fourth was in quarters like a melon.' - Katherine Blanche Guthrie",
+    	"requiredTech": "Architecture"
+    },
+	{
+		"name": "St. Peter's Basilica",
+    	"uniqueTo": "Papal States",
+    	"isNationalWonder": true,
+    	"cost": 600,
+    	"culture": 5,
+    	"faith": 8,
+    	"happiness": 2,
+    	"percentStatBonus": {
+    		"gold": 25
+    	},
+    	"specialistSlots": {
+     		"Artist": 1,
+    		"Governor": 1
+    	},
+    	"greatPersonPoints": {
+    		"Great Artist": 2,
+    		"Great Prophet": 2
+    	},
+     	"uniques": [
+    		"'Organise Place'",
+    		"Provides [1] [Scriptures]",
+     		"Gain a free [Cathedral] [in this city]",
+     		"Free [Carroccio] appears <after discovering [Theology]>",
+			"May buy ['Worship Place'] buildings with [Gold] [in cities following our religion]",
+      		"[+100]% Yield from every [Holy site]",
+    		"May choose [2] additional belief(s) of any type when [enhancing] a religion",
+    		"[+25]% Natural religion spread [in cities following our religion] <in cities with at least [5] [Population]>",
+	    	"[+30]% [Faith] [in all cities]",
+     		"[+100]% Natural religion spread [in this city]",
+    		"Cost increases by [30] per owned city",
+     		"Can only be built <in [in holy cities] cities>",
+    		"Only available <after adopting [Proxy of the god]>",
+    		"Only available <if [Cathedral] is constructed in at least [6] of [non-[Puppeted]] cities>",
+     		"Only available <when religion is enabled>",
+			"Destroyed when the city is captured",
+    		"Unsellable"
+    	],
+    	"quote": "'You are Peter, and on this rock I will build my church, and I will give you the keys of the kingdom of heaven.' - Matthew 16:18-19",
+    	"requiredTech": "Theology"
+    },
+	{
+		"name": "Apostolic Palace",
+	    "uniqueTo": "Papal States",
+	    "isNationalWonder": true,
+	    "cost": 420,
+	    "faith": 6,
+	    "culture": 5,
+	    "greatPersonPoints": {
+    		"Great Artist": 1
+    	},
+    	"specialistSlots": {
+     		"Governor": 1,
+    		"Artist": 1
+     	},
+    	"uniques": [
+        	"'Organise Place'",
+	    	"Can spend Gold to annex or puppet a City-State that has been your Ally for [20] turns <after adopting [Papal Primacy]> <in cities following our religion>",
+	     	"Gain [100] [Gold] <upon gaining a [Great Prophet] unit> <(modified by game speed)>",
+	    	"May choose [1] additional belief(s) of any type when [enhancing] a religion",
+	    	"Resting point for Influence with City-States following this religion [+15]",
+	    	"All newly-trained [Melee] units [in this city] receive the [Swiss Guard] promotion <starting from the [Renaissance era]>",
+	    	"[+2 Culture, +2 Gold] [in this city] <starting from the [Renaissance era]>",
+	     	"Provides [1] [Piety] <when [Religious] Victory is enabled> <in cities with an enhanced religion>",
+	    	"[+1 Happiness] [in all cities] <when above [2] [Stability]> <in cities following our religion>",
+	    	"Only available <if [Holy See] is constructed>",
+			"Can only be built <in [in holy cities] cities>",
+	      	"Unsellable",
+	    	"Hidden when religion is disabled"
+    	],
+     	"quote": "'A rock pile ceases to be a rock pile the moment a single man contemplates it, bearing within him the image of a cathedral.' - Antoine de Saint-Exupery",
+    	"requiredTech": "Theology"
+    },
+	{
+		"name": "Erzbasilica San Giovanni in Laterano",
+    	"uniqueTo": "Papal States",
+    	"cost": 375,
+    	"faith": 4,
+    	"culture": 2,
+    	"happiness": 1,
+    	"maintenance": 3,
+    	"isNationalWonder": true,
+    	"specialistSlots": {
+     		"Governor": 1,
+    		"Artist": 1
+     	},
+    	"uniques": [
+    		"'Core of Religion'",
+    		"Only available <when religion is enabled>",
+    		"Can only be built <in [Capital] cities>",
+    		"Provides [1] [Piety] <when [Religious] Victory is enabled>",
+	    	"[+10 Culture] when a city adopts this religion for the first time <(modified by game speed)>",
+	    	"[+5]% Natural religion spread [in all cities]",
+	    	"[+30]% Natural religion spread [in this city]",
+	    	"[+20]% Natural religion spread [in this city] <after adopting [Reliquary]>",
+	    	"[+20]% Natural religion spread [in this city] <after adopting [Pilgrimage]>",
+	    	"[+10]% [Faith] from every [{'Worship Place'} {Building}] <in cities following our religion>",
+	    	"Religion naturally spreads to cities [+1] tiles away <after adopting [Pilgrimage]>",
+	    	"[+1 Faith] from every [Cathedral] <in this city>",
+	    	"[+1 Faith] from every [Chapel] <in this city>",
+	    	"[+1 Culture] from every [Monastery] <in this city>",
+	    	"[+2 Faith] from every [Governor] <in this city>",
+			"[+1 Culture] [in all cities] <when above [3] [Stability]> <in cities following our religion>",
+			"[+2 Gold, +2 Culture] [in this city] <starting from the [Renaissance era]>",
+	     	"New [Religious] units start with [10] XP [in this city] <if [Holy See] is constructed> <after enhancing a religion>",
+	     	"All newly-trained [Missionary] units [in this city] receive the [Zeal] promotion <if [St. Peter's Basilica] is constructed> <after adopting [Sanctity]>",
+	     	"[Great Prophet] is earned [+10]% faster <starting from the [Medieval era]> <when above [5] [Piety]>",
+		    "May buy [Missionary] units with [Faith] [in this city]",
+	    	"[Faith] cost of purchasing [Missionary] units [-25]% <in this city>",
+	    	"Only available <if [Chapel] is constructed in at least [4] of [non-[Puppeted]] cities>",
+	       	"Cost increases by [30] per owned city",
+		    "Hidden when religion is disabled",
+		    "Destroyed when the city is captured"
+	    ],
+    	"quote": "'Omnium urbis et orbis ecclesiarum mater et caput — Mutter und Oberhaupt aller Kirchen in der Stadt und der Welt.'",
+    	"requiredTech": "Theology",
+      	"hurryCostModifier": 25
+    },
+	{
+		"name": "Kaserne der Päpstlichen Schweizergarde",
+    	"uniqueTo": "Papal States",
+    	"cost": 140,
+    	"culture": 2,
+    	"specialistSlots": {
+    		"Governor": 1
+    	},
+    	"uniques": [
+    		"'Static Defense'",
+			"'Practice Ground'",
+		    "[2] Unit Supply per [20] population [in capital] <if [Armory] is constructed> <if [Warehouse] is constructed>",
+		    "Earn [40]% of the damage done to [Wounded] units as [Faith]",
+	    	"All newly-trained [Swiss Guard] units [in this city] receive the [Awe] promotion",
+	    	"All newly-trained [Swiss Guard] units [in this city] receive the [Elite Training] promotion <after adopting [Militant Complete]>",
+	    	"New [Melee] units start with [10] XP [in this city]",
+	    	"[+20]% Strength for cities <when defending>",
+	    	"[+1 Happiness] [in this city] <when below [3] [Stability]>",
+	    	"Only available <if [Barrack] is not constructed> <in this city> <if [Holy See] is constructed> <if [St. Peter's Basilica] is constructed> <after adopting [Code of Warrior]>",
+     		"Can only be built <in [in holy cities] cities>",
+	    	"Provides [1] [Standing Army Maintenance]",
+	    	"Destroyed when the city is captured"
+    	],
+    	"quote": "'22. Januar 1506 — der Tag, an dem 150 Schweizer unter Hauptmann Kaspar von Silenen durch die Porta del Popolo in Rom einmarschierten und im Vatikan von Papst Julius II. gesegnet wurden.'",
+    	"requiredTech": "Tactics"
+    },
+	{
+		"name": "Die Leoninische Mauer",
+	    "uniqueTo": "Papal States",
+    	"cost": 90,
+    	"maintenance": 2,
+    	"happiness": 1,
+    	"cityHealth": 55,
+    	"cityStrength": 15,
+    	"uniques": [
+    		"'Static Defense'",
+     		"Can only be built <in [in holy cities] cities>",
+		"Only available <if [Walls] is constructed>",
+		"Destroyed when the city is captured"
+	],
+	    "quote": "'Errichtet unter Papst Leo IV., nachdem die Sarazenen 846 die Kirchenschätze vor den Toren geplündert hatten — finanziert durch eine karolingische Sondersteuer.'",
+    	"requiredTech": "Masonry",
+	    "hurryCostModifier": 25
+    },
+	{
+		"name": "Temple of King Solomon",
+	    "uniqueTo": "Judea",
+	    "isNationalWonder": true,
+	    "cost": 125,
+	    "culture": 1,
+	    "faith": 8,
+	    "cityStrength": 5,
+	    "cityHealth": 50,
+	    "uniques": [
+		    "'Core of Religion'",
+		    "Empire enters golden age",
+		    "Doubles Gold given to enemy if city is captured",
+		    "Provides [1] [Piety] <when [Religious] Victory is enabled>",
+		    "[+7]% [Gold] [in this city] <after adopting [Pessach]>",
+		    "Gain [75] [Faith] <upon expending a [Great Person] unit>",
+		    "Gain [75] [Science] <upon expending a [Great Person] unit>",
+		    "[+100]% Natural religion spread [in this city]",
+		    "[+25]% Natural religion spread [in all cities connected to capital]",
+	    	"May choose [1] additional [Founder] beliefs when [founding] a religion <after adopting [Monotheism]>",
+	    	"Gain [200] [Faith] <upon losing a city> <(modified by game speed)>",
+	    	"[+1 Happiness] <in cities following our religion>",
+	    	"[+2 Faith] from every [Governor] <in this city>",
+	    	"Only available <when religion is enabled>",
+	    	"Can only be built <in [in holy cities] cities>",
+	    	"Only available <if [Synagogue] is constructed in at least [6] of [non-[Puppeted]] cities>",
+	    	"Cost increases by [30] per owned city",
+	    	"Unsellable"
+	    ],
+	    "quote": "'Du sollst meinem Namen nicht ein Haus bauen; denn du bist ein Kriegsmann und hast Blut vergossen.' - 1. Chronik 28:3",
+	    "requiredTech": "Theology"
+    },
+	{
+		"name": "Die Grabeskirche",
+		"unique to": "Jerusalem", //The Kingdom of Israel/Jerusalem
+	    "isWonder": true,
+	    "cost": 475,
+	    "gold": 1,
+     	"culture": 4,
+	    "faith": 8,
+		"percentStatBonus": {
+			"faith": 25,
+    		"gold": 10
+    	},
+     	"greatPersonPoints": {
+    		"Great Prophet": 2
+    	},
+    	"uniques": [
+     		"'Core of Religion'",
+     		"Provides [1] [Scriptures] <in this city> <when above [1] [Piety]> <in cities with a [Library]>",
+    		"Provides [1] [Piety] <when [Religious] Victory is enabled>",
+     		"All newly-trained [Missionary] units [in this city] receive the [Devout] promotion",
+    		"[+15]% Natural religion spread [in this city] <in cities with a [foreign] religion> <in cities with between [7] and [25] [Followers of this Religion]>",
+      		"[+15]% [Faith] [in this city] <after adopting [Pilgrimage]>",
+    		"[+50]% [Faith] [in this city] <in cities with a [major] religion>",
+    		"[+80]% Natural religion spread [in this city] <in cities with a [major] religion>",
+      		"[+70]% Natural religion spread [in cities following this religion] <after enhancing a religion>",
+	     	"Religion naturally spreads to cities [+2] tiles away <in cities with a [major] religion>",
+    		"[+30]% Spread Religion Strength <for units with [Evangelism]> <in cities with a [foreign] religion>",
+	    	"[-20]% Faith cost of generating Great Prophet equivalents <after adopting [Saints Worship]>",
+	    	"May choose [1] additional [Founder] beliefs when [founding] a religion",
+	    	"May choose [1] additional [Follower] beliefs when [enhancing] a religion",
+	    	"Gain [50] [Faith] <every [30] turns> <(modified by game speed)>",
+	     	"[+2 Happiness] [in this city] <in cities with a [foreign] religion>",
+	     	"Can only be built <in [in holy cities] cities>",
+	      	"Can only be built <in cities with at least [5] [Followers of this Religion]>",
+	    	"Only available <after adopting [Monotheism]>",
+	    	"Only available <if [Crucifixion Field] is constructed> <in this city>",
+	    	"Only available <if [Grab Jesu] is constructed> <in this city>",
+	    	"Only available <when religion is enabled>",
+	    	"Unsellable"
+    	],
+    	"quote": "'Ich bin die Auferstehung und das Leben. Wer an mich glaubt, wird leben, auch wenn er stirbt.' - Johannes 11:25",
+     	"requiredTech": "Masonry"
+    },
+	
+	{
+		"name": "Kirche aller Völker",
+	    "unique to": "Jerusalem", //The Kingdom of Israel/Jerusalem
+	    "isWonder": true,
+	    "cost": 500,
+	    "faith": 3,
+	    "culture": 2,
+	    "uniques": [
+     		"'Worship Place'",
+    		"Hidden when religion is disabled",
+    		"[+1 Faith] [in this city] <for every [Remaining [Known] Civilizations]>",
+    		"Gain [100] [Gold] <upon declaring friendship> <(modified by game speed)>",
+    		"[+2 Culture] [in this city] <when not at war>",
+	    	"[+10]% Natural religion spread [in this city] <for [Open Borders] Civilizations>",
+     	   	"Can only be built <in [in holy cities] cities>",
+    	   	"Only available <after adopting [Monotheism]>",
+    		"Only available <if [Grab Jesu] is constructed> <in this city>",
+    		"Only available <if [No Wonder] is not constructed> <hidden from users>"
+    	],
+    	"quote": "'Wachet und betet, dass ihr nicht in Anfechtung fallet. Der Geist ist willig, aber das Fleisch ist schwach.' - Matthäus 26:41",
+    	"requiredTech": "Architecture"
+    },
+	{
+		"name": "Maria-Magdalena Kirche",
+    	"isWonder": true,
+    	"cost": 450,
+    	"faith": 3,
+    	"culture": 3,
+    	"greatPersonPoints": {
+    		"Great Artist": 2
+    	},
+     	"specialistSlots": {
+    		"Artist": 2
+	    },
+    	"uniques": [
+    		"'Worship Place'",
+	    	"Hidden when religion is disabled",
+	     	"[+2 Faith, +2 Culture] [in this city] <if [St. Basil's Cathedral] is constructed by anybody>",
+	    	"[+1 Faith] from every [Artist] <in this city>",
+	     	"[+2 Culture] [in this city] <when not at war>",
+	     	"Only available <in cities with a [Orthodox Church] religion>",
+	    	"Can only be built <in [in holy cities] cities>",
+	    	"Only available <if [Grab Jesu] is constructed> <in this city>",
+	     	"Only available <if [No Wonder] is not constructed> <hidden from users>"
+	    ],
+	    "quote": "'Sie aber gingen hin und verkündeten es. Und Maria von Magdala ging und verkündigte den Jüngern: Ich habe den Herrn gesehen.' - Johannes 20:18",
+ 	    "requiredTech": "Architecture"
+    },
+	{
+		"name": "Das Salvatorkloster",
+		"unique to": "Jerusalem", //The Kingdom of Israel/Jerusalem
+     	"cost": 150,
+	    "maintenance": 1,
+	    "faith": 2,
+	    "culture": 1,
+    	"specialistSlots": {
+    		"Labourer": 2
+    	},
+    	"uniques": [
+     		"'Practice Ground'",
+    		"[+2 Faith] from every [Labourer] <in this city>",
+     		"[+1 Production] from [{Manual Farm} {Olives}] tiles [in this city]",
+     		"Provides [1] [Olive Oil] <with [Olives]> <in this city>",
+     		"[-10]% maintenance cost for [{'Worship Place'} {Buildings}] buildings [in this city]",
+     		"[+10]% [Faith] [in this city] <after adopting [Way of Pilgrimage]>",
+    		"Comment [Und ich arbeitete mit meinen Händen und will arbeiten - Testament des hl. Franziskus]",
+     		"Can only be built <in [in holy cities] cities>",
+     		"Hidden when religion is disabled"
+     	],
+    	"requiredTech": "Guilds"
+    },
+	{
+	    "name": "Diözese",
+    	"uniqueTo": "Papal States",
+    	"cost": 0,
+    	"faith": 1,
+    	"uniques": [
+    		"'Worship Place'",
+    		"Unsellable",
+     		"Unbuildable",
+    		"[+2 Faith] from [City center] tiles [in this city]",
+    		"[+1 Happiness] [in this city] <in cities following our religion>",
+     		"Destroyed when the city is captured",
+     		"Comment [Ein abgegrenzter kirchlicher Verwaltungsbezirk unter der Leitung eines Bischofs]",
+     		"Hidden when religion is disabled"
+    	],
+    	"quote": "'Servus servorum Dei - Knecht der Knechte Gottes.' - Gregor der Große"
+    },
+	{
+		"name": "Felsendom",
+    	"uniqueTo": "Palestine",
+	    "isNationalWonder": true,
+    	"cost": 125,
+    	"faith": 4,
+    	"gold": 2,
+    	"culture": 2,
+    	"specialistSlots": {
+    		"Governor": 1
+    	},
+    	"uniques": [
+    		"'Worship Place'",
+     		"Provides [1] [Piety] <when [Religious] Victory is enabled>",
+      		"[+100]% Natural religion spread [in this city]",
+    	   	"[+30]% Natural religion spread [in this city] <in cities with a [foreign] religion>",
+    		"[+2 Faith] [in all cities] <in cities not following a [your] religion>",
+    		"May buy [Inquisitor] units with [Faith] [in this city]",
+    		"[Faith] cost of purchasing [Inquisitor] units [-25]% <in this city>",
+    		"[+2 Faith] from every [Governor] <in this city>",
+     		"Only available <after adopting [Pilgrimage]>",
+    		"Only available <when religion is enabled>",
+      		"Can only be built <in [in holy cities] cities>",
+     		"Only available <in cities without a [Temple of King Solomon]>",
+    		"Cost increases by [30] per owned city",
+     		"Unsellable",
+      		"Hidden when religion is disabled"
+      	],
+    	"quote": "'Er ist Gott, ein Einziger, Gott, der Ewige. Er zeugt nicht und wurde nicht gezeugt.' - Inschrift im Felsendom, Sure 112",
+    	"requiredTech": "Theology"
+    },
+	{
+		"name": "Tatev Monastery",
+    	"uniqueTo": "Armenia",
+    	"isNationalWonder": true,
+    	"cost": 125,
+      	"faith": 3,
+    	"culture": 2,
+    	"science": 1,
+    	"greatPersonPoints": {
+     		"Great Scientist": 1
+    	},
+    	"specialistSlots": {
+    		"Scientist": 1,
+    		"Artist": 1
+    	},
+     	"uniques": [
+     		"'Core of Religion'",
+	    	"Provides [1] [Piety] <when [Religious] Victory is enabled>",
+			"[+100]% Natural religion spread [in this city]",
+	     	"[+2 Faith] from every [Governor] <in this city>",
+	    	"[+1 Science] from every [Monastery] [in all cities]",
+	    	"Must have an owned [Mountain] within [2] tiles",
+	    	"Only available <if [Monastery] is constructed in at least [4] of [non-[Puppeted]] cities>",
+	    	"Only available <when religion is enabled>",
+	    	"Can only be built <in [in holy cities] cities>",
+	     	"Cost increases by [30] per owned city",
+	      	"Unsellable",
+	    	"Hidden when religion is disabled"
+	    ],
+	    "quote": "'Ein Stab sei dieser Säule gleich: Er neige sich, doch falle nicht.' - Inschrift am Gavazan von Tatev",
+	    "requiredTech": "Theology"
+    },
+	{
+		"name": "Vank",
+      	"uniqueTo": "Armenia",
+    	"replaces": "Temple",
+    	"maintenance": 1,
+    	"faith": 2,
+    	"culture": 1,
+      	"uniques": [
+     		"'Worship Place'",
+    		"'Practice Ground'",
+	     	"'Organise Place'",
+     		"Only available <when religion is enabled>",
+     		"[+1 Culture] [in this city] <in [Hill] tiles>",
+	      	"[+1 Faith] [in this city] <within [2] tiles of a [Mountain]>",
+     		"Destroyed when the city is captured"
+    	],
+    	"requiredTech": "Drama and Poetry"
+    },
 ]
